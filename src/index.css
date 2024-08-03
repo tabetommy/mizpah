@@ -1,0 +1,352 @@
+
+:root {
+  --color-white:#fff;
+  --color-transparent:rgba(0,0,0,0.0);
+  --color-primary:rgb(57, 244, 140);
+  --color-primary-opa:rgb(29, 236, 121);
+  --color-light-primary:#f1f1f1;
+  --color-black:#000;
+  --color-black-grey:#060a0e;
+  --color-black-grey-light:rgba(52, 73, 94, 0.75);
+  --color-red: red;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,a{
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+p{
+ margin: 0px;
+ font-size: 20px;
+ line-height: 35px;
+ font-weight: 500;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.menu{
+  list-style-type: none;
+}
+
+.menu li {
+  display:flex;
+  align-items:center;
+  padding: 0 10px;
+  
+
+}
+
+.menu a{
+  text-decoration: none;
+  color: #000000;
+  padding:0 15px;
+  text-align: center;
+  position:relative;
+}
+
+.menu a.active::before {
+  content:"";
+  position:absolute;
+  top:-33px;
+  left:15px;
+  right:15px;
+  height:5px;
+  background: #02AE51;
+}
+
+.menu .vr{
+  margin-top:24px;
+  height:30px;
+}
+
+
+
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 85px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #636363;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #6b6b6b;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-menu{
+  background: white !important;
+}
+
+.bm-menu a{
+  margin: 0px auto;
+  padding:10px  !important;
+  text-decoration: none;
+  color:black
+}
+
+.bm-menu a:hover{
+  background:#efefef;
+  border-radius: 10px;
+}
+
+.title-1{
+  font-size: 70px; 
+  font-weight: bold 
+}
+.title-2{
+  font-size: 50px; 
+  font-weight: bold 
+}
+
+.bold-header{
+  position:relative;
+  z-index: 1;
+}
+
+.bold-header::after{
+  content: '';
+  position: absolute;
+  height:25px;
+  left:0;
+  top:63px;
+  background-color:#39f48c;
+  right:-5px;
+  z-index:-1;
+
+}
+
+.what-we-do-number{
+  background:#02AE51;
+  width:20px !important;
+  height:20px !important;
+  border-radius: 50%;
+  margin-top:-30px;
+  color:rgba(255, 255, 255, 0);
+  position:absolute;
+  font-weight: bold;
+  transition: all 350ms cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.what-we-do-cell:hover .what-we-do-number{
+  background:#02ae52;
+  width:70px !important;
+  height:70px !important;
+  border-radius: 50%;
+  margin-top:-60px;
+  color:white;
+  margin-bottom:-8px;
+  margin-left: -25px;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.mp-overlay{
+  background: linear-gradient(90deg, #02ae5200, #02AE51);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  clip-path: polygon(40% 0, 100% 0, 100% 100%, 25% 100%);
+}
+
+.pump-bg{
+  background: url(./assets/pump.png);
+  background-size: cover;
+}
+
+.mp-breadcrumps-link{
+  position:relative;
+}
+
+.mp-breadcrumps-link::before{
+width:0px;
+-webkit-transition: width 250ms;
+transition: width 250ms;
+}
+.mp-breadcrumps-link:hover::before{
+background:#41AE51 !important;
+content:"";
+position:absolute;
+left: 0;
+width:100%;
+height: 4px;
+bottom: 0;
+}
+
+.quote {
+  padding: 60px 80px 40px;
+  position: relative;
+}
+
+.quote p {
+  font-size: 35px;
+  font-weight: 700px;
+  text-align: center;
+ 
+}
+
+.products-main{
+  height:85vh !important;
+  background: url(./assets/pump.png);
+  background-size: cover;
+}
+
+.custom-tree ul{
+list-style-type: none !important;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.custom-tree .li-l1{
+padding:6px;
+width:100%;
+margin-top: 4px;
+margin-bottom: 4px;
+margin: 2px auto;
+border-radius: 2px;
+background: rgb(62, 62, 62);
+color:white;
+
+}
+
+.custom-tree .li-l2{
+  padding:6px;
+  margin: 2px auto;
+  width:100%;
+  border-radius: 2px;
+  background: rgb(122, 122, 122);
+  color:white;
+  }
+
+  .custom-tree .li-l3{
+    padding:6px;
+    margin: 2px auto;
+    width:100%;
+    border-radius: 2px;
+    background:  #00000037;;
+    }
+
+  .custom-tree .li-l4{
+    padding:6px;
+    margin: 2px auto;
+    width:100%;
+    border-radius: 2px;
+    background: #41ae5162;
+    }
+
+
+#products-page .slick-list{
+  height:600px !important;
+}
+
+/* btn styles */
+.btn {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 14px;
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+  background-color: var(--color-primary);
+}
+
+.btn:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: var(--color-primary-opa);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.3s ease-out;
+}
+
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:before {
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
