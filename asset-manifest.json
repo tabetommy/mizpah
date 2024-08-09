@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mizpah/static/css/main.75660c57.css",
-    "main.js": "/mizpah/static/js/main.2067f9d5.js",
+    "main.css": "/mizpah/static/css/main.8345a193.css",
+    "main.js": "/mizpah/static/js/main.747e2da0.js",
     "static/js/787.cda612ba.chunk.js": "/mizpah/static/js/787.cda612ba.chunk.js",
     "static/media/about-unsplash.jpg": "/mizpah/static/media/about-unsplash.160cf58a8f1a0be1952c.jpg",
     "static/media/products_1.png": "/mizpah/static/media/products_1.9e00732bc0510c3619fc.png",
@@ -27,6 +27,7 @@
     "static/media/image 26.png": "/mizpah/static/media/image 26.25e20c19fdad0bb96e67.png",
     "static/media/image 22.png": "/mizpah/static/media/image 22.81648a559ebe06ed64eb.png",
     "static/media/image 23.png": "/mizpah/static/media/image 23.c1985d51d5ea55d2b989.png",
+    "static/media/corrosion-protection.jpg": "/mizpah/static/media/corrosion-protection.1364dcb87af62cf221c7.jpg",
     "static/media/image 20.png": "/mizpah/static/media/image 20.ce18dd45ae2ce9f17bf2.png",
     "static/media/image 25.png": "/mizpah/static/media/image 25.1a9895ffbe74d3d3c958.png",
     "static/media/IMG-20221123-WA0020.jpg": "/mizpah/static/media/IMG-20221123-WA0020.4c1e5549baab3f067fff.jpg",
@@ -34,12 +35,14 @@
     "static/media/image 1.png": "/mizpah/static/media/image 1.5a9f67b269e8cc23c8c9.png",
     "static/media/image 5.png": "/mizpah/static/media/image 5.b6f62358718682a5e3f5.png",
     "static/media/image 9.png": "/mizpah/static/media/image 9.b09cffc08c9874062d9f.png",
+    "static/media/bootstrap-icons.woff?": "/mizpah/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/image 4.png": "/mizpah/static/media/image 4.2f828cc6bd5c6c6a6ffa.png",
     "static/media/image 2.png": "/mizpah/static/media/image 2.99b82e6c39078a00068f.png",
     "static/media/image 6.png": "/mizpah/static/media/image 6.c43e265078062616f3ea.png",
     "static/media/image 8.png": "/mizpah/static/media/image 8.52c1a59cdff784e9481e.png",
     "static/media/IMG-20221123-WA0021.jpg": "/mizpah/static/media/IMG-20221123-WA0021.a1e3949d7331a49debff.jpg",
     "static/media/image 24.png": "/mizpah/static/media/image 24.fcb414482f18aa63e32d.png",
+    "static/media/bootstrap-icons.woff2?": "/mizpah/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/image 3.png": "/mizpah/static/media/image 3.7c38db298aebfb051bed.png",
     "static/media/image 10.png": "/mizpah/static/media/image 10.0ed8a84aece760efd7d4.png",
     "static/media/image 21.png": "/mizpah/static/media/image 21.031c7a6aacd6becff022.png",
@@ -76,7 +79,10 @@
     "static/media/tkk_hoist&crane.png": "/mizpah/static/media/tkk_hoist&crane.4ea9f36ad1811fdc2182.png",
     "static/media/supavac.jpeg": "/mizpah/static/media/supavac.c7ffafaad7d7a36c3fb9.jpeg",
     "static/media/Slurry-Force.jpeg": "/mizpah/static/media/Slurry-Force.d4f801243dc0ebd84cff.jpeg",
+    "static/media/revicons.eot": "/mizpah/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/mizpah/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/arc.png": "/mizpah/static/media/arc.a06bbc0ae154820c8aa8.png",
+    "static/media/revicons.woff": "/mizpah/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/electric.svg": "/mizpah/static/media/electric.0d319cac77ae64ad959fc44fcafd5d3b.svg",
     "static/media/machinery.svg": "/mizpah/static/media/machinery.766bd6c50f8a54ad32f59445abec80a2.svg",
     "index.html": "/mizpah/index.html",
@@ -86,12 +92,12 @@
     "static/media/corrotion.svg": "/mizpah/static/media/corrotion.c1d5c10d8c0dedb0f6909d73ff9560db.svg",
     "static/media/tanks.svg": "/mizpah/static/media/tanks.5e72d0673c4c9426478f2b9945798227.svg",
     "static/media/painting.svg": "/mizpah/static/media/painting.406da6d1823ea0a059255c8b1ce3adee.svg",
-    "main.75660c57.css.map": "/mizpah/static/css/main.75660c57.css.map",
-    "main.2067f9d5.js.map": "/mizpah/static/js/main.2067f9d5.js.map",
+    "main.8345a193.css.map": "/mizpah/static/css/main.8345a193.css.map",
+    "main.747e2da0.js.map": "/mizpah/static/js/main.747e2da0.js.map",
     "787.cda612ba.chunk.js.map": "/mizpah/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75660c57.css",
-    "static/js/main.2067f9d5.js"
+    "static/css/main.8345a193.css",
+    "static/js/main.747e2da0.js"
   ]
 }
