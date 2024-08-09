@@ -9,11 +9,14 @@
 	color: #013147;
   }
 }
+
+#arrow-icon,
 .scroll-icon,
 .scroll-icon:before {
   position: absolute;
   left: 50%;
 }
+
 
 .scroll-icon {
 	width: 36px;
@@ -24,8 +27,9 @@
 	border: 5px solid #fff;
 	border-radius: 6px;
 	transition: all 0.5s ease;
+	cursor: pointer;
 	@media only screen and (min-width: 768px)  {
-		border: 1px solid #fff;
+		border: 3px solid #fff;
 		border-radius: 18px;
 	}
 
@@ -41,8 +45,8 @@
 		animation-iteration-count: infinite;
 		animation-name: scroll;
 		@media only screen and (min-width: 768px) {
-			width: 4px;
-			height: 4px;
+			width: 5px;
+			height: 5px;
 			margin-left: -2px;
 			border-radius: 2px; 
 			animation-name: scroll2;
@@ -50,22 +54,43 @@
 	}
 }
 
+#arrow-icon {
+	font-size: 30px;
+	color: #fff;
+	margin-left: -16px;
+	top: 95%;
+	margin-top: -30px;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	@media only screen and (min-width: 768px)  {
+		font-size: 30px;
+		color: #fff;
+		margin-left: -16px;
+		top: 95%;
+		margin-top: -30px;
+		transition: all 0.5s ease;
+		cursor: pointer;
+	}
+
+}
+
+
 @keyframes scroll {
 	0% {
-		transform: translateY(24px);
 		opacity: 1;
 	}
 	100% {
 		opacity: 0;
+		transform: translateY(24px);
 	}
 }
 
 @keyframes scroll2 {
 	0% {
+		transform: translateY(24px);
 		opacity: 1;
 	}
 	100% {
 		opacity: 0;
-		transform: translateY(24px);
 	}
 }

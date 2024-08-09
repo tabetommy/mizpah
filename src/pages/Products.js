@@ -1,10 +1,20 @@
 import React, { useRef } from "react";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Header from "../routeComponents/Header";
 import SupavacImage from "../assets/supavac.jpeg";
 import TKKLogo from "../assets/hoistandcrane.png";
 import TruFlow from "../assets/truflow.webp";
 import BartailLogo from "../assets/bartail-logo.png";
+import ScrollComponent from "./scrollcomponent/scroll";
+
+import Accordion from 'react-bootstrap/Accordion';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 import MudexLogo from "../assets/Mudex.png";
 import SlurryForce from "../assets/Slurry-Force.jpeg";
@@ -102,11 +112,73 @@ const Products = () => {
   };
 
   const sliderRef = useRef();
+  const scrollRef = useRef();
+  
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 3
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1
+  //   }
+  // };
+  
+  
+  const [responsive,setResponsive]=React.useState({
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+      }
+    });
+  
+  const setCarouselResp=()=>{
+   window.dispatchEvent(new Event('resize'));
+  }
+  
   return (
     <div id="products-page">
       <Header />
+      <div className="home-main-container">
+        <div className="home-contents">
+      
+            <section className="heading-para">
+              <h1>  Pioneering management and <br/>technology consulting for digital change</h1>
+            </section>
+            {/* <section className="home-services">
+              <p>
+                We are shaping construction in Ghana and designing strategies for a world that is constantly changing.<br/>
+                Together with our clients, we forge ahead into the future - Guiding Ahead. <br/>In this way, we help corporations, SMEs and the public sector to recognise and implement relevant opportunities in a constantly changing environment.
+              </p>
+            </section> */}
+        </div>
+        <ScrollComponent scrollreference={scrollRef}/>
+      </div>
 
-      <Slider style={{ height: 600 }} ref={sliderRef} {...settings}>
+      {/* <Slider style={{ height: 600 }} ref={sliderRef} {...settings}>
         <div>
           <div
             style={{ width: "100%" }}
@@ -394,387 +466,380 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </Slider>
-
-      <div className="container mt-4">
-        <h1
-          className="products-range"
-          style={
-            isNotDesktop
-              ? { fontSize: 60, fontWeight: 900 }
-              : { fontSize: 88, fontWeight: 900 }
-          }
-        >
-          Our Products Range
-        </h1>
-        <p className="fw-bold">
-          More than providing pumps, Mizpah supplies quality pumps and
-          engineering equipments to West Africa as well as a wide range of
-          engineering services.
-        </p>
-        <div style={slideWelcomeText} className="fw-bolder">
-          MIZPAH'S CORE OFFERING CONSISTS OF:
-        </div>
-        <h2 className="fw-bold text-muted mt-4 mb-3">BRANDS</h2>
-        <div className="d-flex flex-wrap align-items-center mb-5">
-          <div className="me-5 mb-5">
-            <a href="https://www.tkkhoists.com/" target={"_blank"}>
-              <img src={TKKLogo} style={{ width: 300 }} />
-            </a>
-          </div>
-          <div className="me-5 mb-5">
-            <a href="https://truflopumps.com.au/" target={"_blank"}>
-              <img src={TruFlow} style={{ width: 300 }} />
-            </a>
-          </div>
-          <div className="me-5 mb-5">
-            <a href="https://mudex.com.au/" target={"_blank"}>
-              <img src={MudexLogo} style={{ width: 300 }} />
-            </a>
-          </div>
-          <div className="me-5 mb-5">
-            <a href="https://www.bartail.com.au/" target={"_blank"}>
-              <img src={BartailLogo} style={{ width: 300 }} />
-            </a>
-          </div>
-        </div>
-        <h2 className="fw-bold text-muted mt-4 mb-3">TRUFLO</h2>
-        <div className="d-flex flex-wrap align-items-center mb-5">
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ProductsTwo}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ProductsThree}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ProductsFour}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ProductsFive}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageEleven}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageTwelve}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageThirteen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageFourteen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageFifteen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageSixteen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageSeventeen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageSeventeenTwo}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageSeventeenThree}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-          <div className="me-5 mb-5 position-relative">
-            <img
-              src={ImageEighteen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-            <img
-              src={AustralianMadeLogo}
-              style={{
-                width: 100,
-                height: 100,
-                position: "absolute",
-                bottom: 0,
-                right: 0,
-              }}
-            />
-          </div>
-        </div>
-
-        <h2 className="fw-bold text-muted mt-4 mb-3">MUDEX</h2>
-        <div className="d-flex flex-wrap align-items-center mb-5">
-          <div className="me-5 mb-5">
-            <img
-              src={ImageOne}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwo}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageThree}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageFour}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageFive}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageSix}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageSeven}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageEight}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageNine}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-        </div>
-
-        <h2 className="fw-bold text-muted mt-4 mb-3">TKK Hoist&Crane</h2>
-        <div className="d-flex flex-wrap align-items-center mb-5">
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwentyThree}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwentyFour}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwentyFive}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwentySix}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-        </div>
-        <h2 className="fw-bold text-muted mt-4 mb-3">Bartail</h2>
-        <div className="d-flex flex-wrap align-items-center mb-5">
-          <div className="me-5 mb-5">
-            <img
-              src={ImageNineteen}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwenty}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwentyOne}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-          <div className="me-5 mb-5">
-            <img
-              src={ImageTwentyTwo}
-              style={{ width: 300, height: 300, objectFit: "cover" }}
-            />
-          </div>
-        </div>
-      </div>
+      </Slider> */}
+      
+      
+      <Container className="py-5">
+        <Row>
+          <Col>
+            <Accordion defaultActiveKey={['0']}>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>
+                  <img src={TruFlow} style={{ width: 200 }} />
+                </Accordion.Header>
+                <Accordion.Body onEntering={setCarouselResp}>
+                <h3 className="product-title">Truflo Pumping systems</h3>
+                  <Carousel responsive={responsive}>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ProductsTwo}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ProductsThree}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ProductsFour}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ProductsFive}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageEleven}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageTwelve}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageThirteen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageFourteen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageFifteen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageSixteen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageSeventeen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageSeventeenTwo}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageSeventeenThree}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5 position-relative">
+                      <img
+                        src={ImageEighteen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                      <img
+                        src={AustralianMadeLogo}
+                        style={{
+                          width: 100,
+                          height: 100,
+                          position: "absolute",
+                          bottom: 0,
+                          right: 0,
+                        }}
+                      />
+                    </div>
+                  </Carousel>
+                </Accordion.Body>
+              </Accordion.Item>
+              
+              
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                 <img src={MudexLogo} style={{ width: 200 }} />
+                </Accordion.Header>
+                <Accordion.Body onEntering={setCarouselResp}>
+                  <h3 className="product-title">Mudex Products</h3>
+                  <Carousel responsive={responsive}>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageOne}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwo}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageThree}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageFour}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageFive}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageSix}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageSeven}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageEight}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageNine}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                  </Carousel>
+                </Accordion.Body>
+              </Accordion.Item>
+              
+              <Accordion.Item eventKey="2">
+                <Accordion.Header><img src={TKKLogo} style={{ width: 200 }} /></Accordion.Header>
+                <Accordion.Body onEntering={setCarouselResp}>
+                <h3 className="product-title">TKK Hoist & Crane</h3>
+                 <Carousel responsive={responsive}>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwentyThree}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwentyFour}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwentyFive}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwentySix}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                 </Carousel>
+                </Accordion.Body>
+              </Accordion.Item>
+              
+              
+              <Accordion.Item eventKey="3">
+                <Accordion.Header><img src={BartailLogo} style={{ width: 200, height:90 }} /></Accordion.Header>
+                <Accordion.Body onEntering={setCarouselResp}>
+                  <h3 className="product-title">Bartail</h3>
+                  <Carousel responsive={responsive}>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageNineteen}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwenty}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwentyOne}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="me-5 mb-5">
+                      <img
+                        src={ImageTwentyTwo}
+                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                      />
+                    </div>
+                  </Carousel>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
+          </Col>
+        </Row>
+      </Container>
       <Footer />
     </div>
   );

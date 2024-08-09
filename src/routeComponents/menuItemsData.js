@@ -17,7 +17,7 @@ export const menuItemsData = [
 	  },
 	  {
 		  title: "Machinery Hiring",
-		  url: "/services/machine",
+		  url: "/services/machinery",
 	  },
 	  {
 		  title: "Tanks and Pipe Works",

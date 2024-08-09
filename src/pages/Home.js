@@ -29,7 +29,10 @@ import Corrotion from "../assets/corrotion.svg";
 import { useMediaQuery } from "react-responsive";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import './pages.css';
+
+import { useNavigate } from "react-router-dom"
 
 function Home() {
   const isNotDesktop = useMediaQuery({
@@ -54,6 +57,9 @@ function Home() {
   };
 
   const sliderRef = useRef();
+  const scrollRef= useRef(null);
+  const navigate = useNavigate();
+  
 
   return (
     <div>
@@ -71,48 +77,50 @@ function Home() {
               </p>
             </section> */}
         </div>
-        <ScrollComponent/>
+        <ScrollComponent scrollreference={scrollRef}/>
       </div>
-      <div className="home-contents">
+      <div className="home-contents" ref={scrollRef}>
       
           <section className="heading-para">
             <h1 className="white-header"> Our Services</h1>
           </section>
           <section className="container">
             <div className="row my-5">
-               <div className="col text-center">
+               <div className="col text-center homepage-service">
                  <img src={Pump} style={{width:'100px'}} alt="Pump repairs"/>
                  <h5>Pump Repairs</h5>
+                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                </div>
-               <div className="col text-center">
+               <div className="col text-center homepage-service">
                   <img src={Machine} style={{width:'100px'}} alt="Machinery Hiring"/>
                   <p>Machinery Hiring</p>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center homepage-service">
                   <img src={Tank} style={{width:'100px'}} alt="Tanks And Pipe Works"/>
                   <p>Tanks And Pipe Works</p>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center homepage-service">
                   <img src={Paint} style={{width:'100px'}} alt="Sandblasting And Painting"/>
                   <p>Sandblasting And Painting</p>
                 </div>
             </div>
             <div className="row my-5">
-                <div className="col text-center">
+                <div className="col text-center homepage-service">
                   <img src={Corrotion} style={{width:'100px'}} alt="Corrotion Protection"/>
                   <p>Corrotion Protection</p>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center homepage-service">
                   <img src={Pipe} style={{width:'100px'}} alt="Plumbing services"/>
                   <p>Plumbing Works</p>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center homepage-service">
                   <img src={Electric} style={{width:'100px'}} alt="Electrical works"/>
                   <p>Electrical works</p>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center homepage-service">
                   <img src={Construction} style={{width:'100px'}} alt="construction services"/>
-                  <p>Constuction Works</p>
+                  <h5>Constuction Works</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
                 </div>
             </div>
           </section>
@@ -121,7 +129,13 @@ function Home() {
       <div className="home-contentsssss">
           <section className="text-white heading-para">
             <h1>Products</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+            <p className="mb-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+           <p className="text-center">
+              <span 
+              className="transparent-btn"
+              onClick={()=>navigate('/products')}
+              >Our Products</span>
+           </p>
           </section>
       </div>
       <div className="home-contents">
