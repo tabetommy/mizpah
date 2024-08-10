@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/mizpah/static/css/main.8345a193.css",
-    "main.js": "/mizpah/static/js/main.747e2da0.js",
+    "main.css": "/mizpah/static/css/main.648f0131.css",
+    "main.js": "/mizpah/static/js/main.9ba28bb9.js",
     "static/js/787.cda612ba.chunk.js": "/mizpah/static/js/787.cda612ba.chunk.js",
     "static/media/about-unsplash.jpg": "/mizpah/static/media/about-unsplash.160cf58a8f1a0be1952c.jpg",
     "static/media/products_1.png": "/mizpah/static/media/products_1.9e00732bc0510c3619fc.png",
     "static/media/products_2.png": "/mizpah/static/media/products_2.7bda9cbdc4a7bd027b0c.png",
     "static/media/dark-newmain.png": "/mizpah/static/media/dark-newmain.6f74e80a11a1eee179be.png",
     "static/media/products_4.png": "/mizpah/static/media/products_4.16c3a9f793a308b4bdca.png",
+    "static/media/product-main.jpg": "/mizpah/static/media/product-main.eb6f9b1109de82583bdf.jpg",
     "static/media/products_3.png": "/mizpah/static/media/products_3.a75f5bf2e24421337389.png",
     "static/media/products_5.png": "/mizpah/static/media/products_5.a3377ab1b5dbed8f82cf.png",
     "static/media/products_6.png": "/mizpah/static/media/products_6.e0eb470035f818bf8612.png",
@@ -27,6 +28,7 @@
     "static/media/image 26.png": "/mizpah/static/media/image 26.25e20c19fdad0bb96e67.png",
     "static/media/image 22.png": "/mizpah/static/media/image 22.81648a559ebe06ed64eb.png",
     "static/media/image 23.png": "/mizpah/static/media/image 23.c1985d51d5ea55d2b989.png",
+    "static/media/about-main.jpeg": "/mizpah/static/media/about-main.b5cdd7691d81dc69df86.jpeg",
     "static/media/corrosion-protection.jpg": "/mizpah/static/media/corrosion-protection.1364dcb87af62cf221c7.jpg",
     "static/media/image 20.png": "/mizpah/static/media/image 20.ce18dd45ae2ce9f17bf2.png",
     "static/media/image 25.png": "/mizpah/static/media/image 25.1a9895ffbe74d3d3c958.png",
@@ -92,12 +94,12 @@
     "static/media/corrotion.svg": "/mizpah/static/media/corrotion.c1d5c10d8c0dedb0f6909d73ff9560db.svg",
     "static/media/tanks.svg": "/mizpah/static/media/tanks.5e72d0673c4c9426478f2b9945798227.svg",
     "static/media/painting.svg": "/mizpah/static/media/painting.406da6d1823ea0a059255c8b1ce3adee.svg",
-    "main.8345a193.css.map": "/mizpah/static/css/main.8345a193.css.map",
-    "main.747e2da0.js.map": "/mizpah/static/js/main.747e2da0.js.map",
+    "main.648f0131.css.map": "/mizpah/static/css/main.648f0131.css.map",
+    "main.9ba28bb9.js.map": "/mizpah/static/js/main.9ba28bb9.js.map",
     "787.cda612ba.chunk.js.map": "/mizpah/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8345a193.css",
-    "static/js/main.747e2da0.js"
+    "static/css/main.648f0131.css",
+    "static/js/main.9ba28bb9.js"
   ]
 }
