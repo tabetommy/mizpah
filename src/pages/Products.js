@@ -162,7 +162,7 @@ const Products = () => {
   return (
     <div id="products-page">
       <Header />
-      <div className="home-main-container">
+      <div className="products-main-container">
         <div className="home-contents">
       
             <section className="heading-para">
@@ -475,15 +475,15 @@ const Products = () => {
             <Accordion defaultActiveKey={['0']}>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  <img src={TruFlow} style={{ width: 200 }} />
+                  <h3>Truflo Pumping systems</h3>
                 </Accordion.Header>
                 <Accordion.Body onEntering={setCarouselResp}>
-                <h3 className="product-title">Truflo Pumping systems</h3>
+                <img src={TruFlow} style={{ width: 200 }} />
                   <Carousel responsive={responsive}>
                     <div className="me-5 mb-5 position-relative">
                       <img
                         src={ProductsTwo}
-                        style={{ width: 300, height: 300, objectFit: "cover" }}
+                        style={{ width: 300, height: 300, objectFit: "cover", padding:"10px 0" }}
                       />
                       <img
                         src={AustralianMadeLogo}
