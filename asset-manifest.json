@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/mizpah/static/css/main.648f0131.css",
-    "main.js": "/mizpah/static/js/main.9ba28bb9.js",
+    "main.css": "/mizpah/static/css/main.edcef851.css",
+    "main.js": "/mizpah/static/js/main.385f3c1a.js",
     "static/js/787.cda612ba.chunk.js": "/mizpah/static/js/787.cda612ba.chunk.js",
     "static/media/about-unsplash.jpg": "/mizpah/static/media/about-unsplash.160cf58a8f1a0be1952c.jpg",
     "static/media/products_1.png": "/mizpah/static/media/products_1.9e00732bc0510c3619fc.png",
     "static/media/products_2.png": "/mizpah/static/media/products_2.7bda9cbdc4a7bd027b0c.png",
     "static/media/dark-newmain.png": "/mizpah/static/media/dark-newmain.6f74e80a11a1eee179be.png",
     "static/media/products_4.png": "/mizpah/static/media/products_4.16c3a9f793a308b4bdca.png",
-    "static/media/product-main.jpg": "/mizpah/static/media/product-main.eb6f9b1109de82583bdf.jpg",
     "static/media/products_3.png": "/mizpah/static/media/products_3.a75f5bf2e24421337389.png",
     "static/media/products_5.png": "/mizpah/static/media/products_5.a3377ab1b5dbed8f82cf.png",
     "static/media/products_6.png": "/mizpah/static/media/products_6.e0eb470035f818bf8612.png",
@@ -26,6 +25,7 @@
     "static/media/image 11.png": "/mizpah/static/media/image 11.0d661bea98971223f85c.png",
     "static/media/image 18.png": "/mizpah/static/media/image 18.b7b0cd14982123826a51.png",
     "static/media/image 26.png": "/mizpah/static/media/image 26.25e20c19fdad0bb96e67.png",
+    "static/media/products_2_thumbnail.jpg": "/mizpah/static/media/products_2_thumbnail.e2cab80368a0654df1d4.jpg",
     "static/media/image 22.png": "/mizpah/static/media/image 22.81648a559ebe06ed64eb.png",
     "static/media/image 23.png": "/mizpah/static/media/image 23.c1985d51d5ea55d2b989.png",
     "static/media/about-main.jpeg": "/mizpah/static/media/about-main.b5cdd7691d81dc69df86.jpeg",
@@ -85,21 +85,21 @@
     "static/media/revicons.ttf": "/mizpah/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/arc.png": "/mizpah/static/media/arc.a06bbc0ae154820c8aa8.png",
     "static/media/revicons.woff": "/mizpah/static/media/revicons.e8746a624ed098489406.woff",
-    "static/media/electric.svg": "/mizpah/static/media/electric.0d319cac77ae64ad959fc44fcafd5d3b.svg",
-    "static/media/machinery.svg": "/mizpah/static/media/machinery.766bd6c50f8a54ad32f59445abec80a2.svg",
+    "static/media/electric.svg": "/mizpah/static/media/electric.09453f298587c0bb1f8fcccc1c5d24fd.svg",
+    "static/media/machinery.svg": "/mizpah/static/media/machinery.4b16ab6c6beb1a9a505a62e549d60a32.svg",
     "index.html": "/mizpah/index.html",
-    "static/media/tools-svgrepo-com.svg": "/mizpah/static/media/tools-svgrepo-com.2097c9ee576f8954103c1d06e30d5a2c.svg",
-    "static/media/pipes-svgrepo-com.svg": "/mizpah/static/media/pipes-svgrepo-com.f57d9d3d2727aa4b3696a3b5a7cb4fc9.svg",
-    "static/media/construction.svg": "/mizpah/static/media/construction.fa77f9eb6efba3507a8f31530e80209e.svg",
-    "static/media/corrotion.svg": "/mizpah/static/media/corrotion.c1d5c10d8c0dedb0f6909d73ff9560db.svg",
-    "static/media/tanks.svg": "/mizpah/static/media/tanks.5e72d0673c4c9426478f2b9945798227.svg",
-    "static/media/painting.svg": "/mizpah/static/media/painting.406da6d1823ea0a059255c8b1ce3adee.svg",
-    "main.648f0131.css.map": "/mizpah/static/css/main.648f0131.css.map",
-    "main.9ba28bb9.js.map": "/mizpah/static/js/main.9ba28bb9.js.map",
+    "static/media/tools-svgrepo-com.svg": "/mizpah/static/media/tools-svgrepo-com.3355bb469da8b2d0a89efb9247b931d8.svg",
+    "static/media/pipes-svgrepo-com.svg": "/mizpah/static/media/pipes-svgrepo-com.d4e0e3d54226ec16bbdb995acd61b813.svg",
+    "static/media/construction.svg": "/mizpah/static/media/construction.7aef670e1d8c965cc2d5e85405987142.svg",
+    "static/media/corrotion.svg": "/mizpah/static/media/corrotion.594895600943aab4a2b8e7216c75a8d2.svg",
+    "static/media/tanks.svg": "/mizpah/static/media/tanks.dbf1fca551fbc7362c7c7bfc60c1e3fe.svg",
+    "static/media/painting.svg": "/mizpah/static/media/painting.cbc887d560d9a417ec08cd2e48fc3704.svg",
+    "main.edcef851.css.map": "/mizpah/static/css/main.edcef851.css.map",
+    "main.385f3c1a.js.map": "/mizpah/static/js/main.385f3c1a.js.map",
     "787.cda612ba.chunk.js.map": "/mizpah/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.648f0131.css",
-    "static/js/main.9ba28bb9.js"
+    "static/css/main.edcef851.css",
+    "static/js/main.385f3c1a.js"
   ]
 }
