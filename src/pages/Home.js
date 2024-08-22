@@ -1,7 +1,8 @@
-import React,{ useRef } from "react";
+import React,{ useRef, useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../routeComponents/Header";
 import ScrollComponent from "./scrollcomponent/scroll";
+import ParticlesBackground from "../components/Particles/Particles.js";
 // import UnderConstruction from "../components/UnderConstruction";
 // import ImageOne from "../assets/dark-main.png";
 // import ImageTwo from "../assets/dark-newmain.png";
@@ -61,67 +62,126 @@ function Home() {
   const navigate = useNavigate();
   
 
+  
+ 
   return (
-    <div>
+    <div className="home">
       <Header/>
+      <ParticlesBackground />
       <div className="home-main-container">
         <div className="home-contents">
-     
-            <section className="heading-para">
-              <h1>  Pioneering management and <br/>technology consulting for digital change</h1>
-            </section>
-            {/* <section className="home-services">
-              <p>
-                We are shaping construction in Ghana and designing strategies for a world that is constantly changing.<br/>
-                Together with our clients, we forge ahead into the future - Guiding Ahead. <br/>In this way, we help corporations, SMEs and the public sector to recognise and implement relevant opportunities in a constantly changing environment.
-              </p>
-            </section> */}
+         <h1 className="img-title">  Pioneering management and <br/>technology consulting for digital change</h1>
         </div>
         <ScrollComponent scrollreference={scrollRef}/>
       </div>
       <div className="home-contents" ref={scrollRef}>
       
           <section className="heading-para">
-            <h1 className="white-header"> Our Services</h1>
+            <h1 className="white-header" > 
+              Our Services 
+              <hr className="centered-line" width="200px"/>
+            </h1>
           </section>
           <section className="container">
             <div className="row my-5">
-               <div className="col text-center homepage-service">
-                 <img src={Pump} style={{width:'100px'}} alt="Pump repairs"/>
-                 <h5>Pump Repairs</h5>
-                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+               <div className="col text-center p-5">
+                 <img src={Pump} style={{width:'60px'}} alt="Pump repairs"/>
+                 <h3 className="pt-2">Pump Repairs</h3>
+                 <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                    <br/>
+                    <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                    Find out more 
+                    <i className="bi bi-arrow-right px-1"></i> 
+                    </span>
+                 </p>
                </div>
-               <div className="col text-center homepage-service">
-                  <img src={Machine} style={{width:'100px'}} alt="Machinery Hiring"/>
-                  <p>Machinery Hiring</p>
+               <div className="col text-center p-5">
+                  <img src={Machine} style={{width:'60px'}} alt="Machinery Hiring"/>
+                  <h3 className="pt-2">Machinery Hiring</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
+                </div> 
+                <div className="col text-center p-5">
+                  <img src={Tank} style={{width:'60px'}} alt="Tanks And Pipe Works"/>
+                  <h3 className="pt-2">Tanks And Pipe Works</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
                 </div>
-                <div className="col text-center homepage-service">
-                  <img src={Tank} style={{width:'100px'}} alt="Tanks And Pipe Works"/>
-                  <p>Tanks And Pipe Works</p>
-                </div>
-                <div className="col text-center homepage-service">
-                  <img src={Paint} style={{width:'100px'}} alt="Sandblasting And Painting"/>
-                  <p>Sandblasting And Painting</p>
+                <div className="col text-center p-5">
+                  <img src={Paint} style={{width:'60px'}} alt="Sandblasting And Painting"/>
+                  <h3 className="pt-2">Sandblasting & Painting</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
                 </div>
             </div>
             <div className="row my-5">
-                <div className="col text-center homepage-service">
-                  <img src={Corrotion} style={{width:'100px'}} alt="Corrotion Protection"/>
-                  <p>Corrotion Protection</p>
+                <div className="col text-center p-5">
+                  <img src={Corrotion} style={{width:'60px'}} alt="Corrotion Protection"/>
+                  <h3 className="pt-2">Corrotion Protection</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
                 </div>
-                <div className="col text-center homepage-service">
-                  <img src={Pipe} style={{width:'100px'}} alt="Plumbing services"/>
-                  <p>Plumbing Works</p>
+                <div className="col text-center p-5">
+                  <img src={Pipe} style={{width:'60px'}} alt="Plumbing services"/>
+                  <h3 className="pt-2">Electrical works</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
                 </div>
-                <div className="col text-center homepage-service">
-                  <img src={Electric} style={{width:'100px'}} alt="Electrical works"/>
-                  <p>Electrical works</p>
+                <div className="col text-center p-5">
+                  <img src={Electric} style={{width:'60px'}} alt="Electrical works"/>
+                  <h3 className="pt-2">Electrical works</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
                 </div>
-                <div className="col text-center homepage-service">
-                  <img src={Construction} style={{width:'100px'}} alt="construction services"/>
-                  <h5>Constuction Works</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
-                </div>
+                <div className="col text-center p-5">
+                  <img src={Construction} style={{width:'60px'}} alt="construction services"/>
+                  <h3 className="pt-2">Constuction Works</h3>
+                   <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <br/>
+                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                      Find out more 
+                      <i className="bi bi-arrow-right px-1"></i> 
+                      </span>
+                   </p>
+                </div> 
             </div>
           </section>
          
@@ -141,7 +201,10 @@ function Home() {
       <div className="home-contents">
       
           <section className="heading-para">
-            <h1 className="white-header">PORTFOLIO OF EXPERIENCE</h1>
+            <h1 className="white-header">
+              PORTFOLIO OF EXPERIENCE
+              <hr className="centered-line" width="500px"/>
+              </h1>
           </section>
          <section className="container">
            <div className="row my-5">

@@ -4,7 +4,7 @@ import FooterNavItem from "./FooterNavItem";
 
 const Footer = () => {
   return (
-    <div style={{ background: "#212121" }} className="p-5">
+    <div style={{ background: "hsl(218, 28%, 13%)" }} className="p-5">
       <div className="container">
         <div className="row">
           <div className="col-md-4 mt-2 text-white">

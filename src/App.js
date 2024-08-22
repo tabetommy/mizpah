@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeOperate from "./pages/WhereWeOperate";
 import Painting from "./pages/services/Painting";
+import TruflowPumpsComponent from "./pages/products/PumpsTruflow";
 
 function App() {
   return (
@@ -87,8 +88,7 @@ function App() {
           />
         }
       />
-      <Route
-        path="/products/pumps/truflo" element={<Products />}/>
+      <Route path="/products/pumps/truflo" element={<TruflowPumpsComponent />}/>
       <Route
         path="/products/pumps/bartail"
         element={
