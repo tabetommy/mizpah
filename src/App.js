@@ -11,6 +11,9 @@ import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeOperate from "./pages/WhereWeOperate";
 import Painting from "./pages/services/Painting";
 import TruflowPumpsComponent from "./pages/products/PumpsTruflow";
+import BartailPumpsComponent from "./pages/products/PumpsBartail";
+import TKKGearsComponent from "./pages/products/TKKHoistCrane";
+import MudexAdditivesComponent from "./pages/products/Additives";
 
 function App() {
   return (
@@ -89,30 +92,10 @@ function App() {
         }
       />
       <Route path="/products/pumps/truflo" element={<TruflowPumpsComponent />}/>
-      <Route
-        path="/products/pumps/bartail"
-        element={
-          <GenericPageLayout
-            component={<Products />}
-          />
-        }
-      />
-      <Route
-        path="/products/additives"
-        element={
-          <GenericPageLayout
-            component={<Products />}
-          />
-        }
-      />
-      <Route
-        path="/products/gears"
-        element={
-          <GenericPageLayout
-            component={<Products />}
-          />
-        }
-      />
+      <Route path="/products/pumps/bartail" element={<BartailPumpsComponent />}/>
+      <Route path="/products/additives" element={<MudexAdditivesComponent  />}/>
+      <Route path="/products/gears" element={<TKKGearsComponent />}/>
+      
       <Route path="/products" element={<Products />} />
       <Route
         path="/other-services"

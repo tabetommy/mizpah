@@ -5,15 +5,26 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+import MudexLogo from "../../assets/Mudex.png";
 
 import ImageGallery from "react-image-gallery";
 import 'react-image-gallery/styles/css/image-gallery.css';
+
+import ImageOne from "../../assets/image 1.png";
+import ImageTwo from "../../assets/image 2.png";
+import ImageThree from "../../assets/image 3.png";
+import ImageFour from "../../assets/image 4.png";
+import ImageFive from "../../assets/image 5.png";
+import ImageSix from "../../assets/image 6.png";
+import ImageSeven from "../../assets/image 7.png";
+import ImageEight from "../../assets/image 8.png";
+import ImageNine from "../../assets/image 9.png";
+import ImageTen from "../../assets/image 10.png";
 
 import ProductsTwo from "../../assets/products_2.png";
 import ProductsThree from "../../assets/products_3.png";
 import ProductsFour from "../../assets/products_4.png";
 import ProductsFive from "../../assets/products_5.png";
-import AustralianMadeLogo from "../../assets/austalianmade.png";
 import ImageEleven from "../../assets/image 11.png";
 import ImageTwelve from "../../assets/image 12.png";
 import ImageThirteen from "../../assets/image 13.png";
@@ -24,68 +35,50 @@ import ImageSeventeen from "../../assets/jumbo-pump-1.png";
 import ImageSeventeenTwo from "../../assets/jumbo-pump-2.png";
 import ImageSeventeenThree from "../../assets/jumbo-pump-3.png";
 import ImageEighteen from "../../assets/image 18.png";
-import TruFlow from "../../assets/truflow.webp";
 
 
 
 
 
-const TruflowPumpsComponent=()=>{
+const MudexAdditivesComponent=()=>{
 
 	
 	const imagesArrss=[
-		
 		{
-			original: ProductsTwo,
+			original: ImageOne,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ProductsThree,
+			original: ImageTwo,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ProductsFour,
+			original: ImageThree,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		},
 		{
-			original: ProductsFive,
+			original: ImageFour,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		}, {
-			original: ImageEleven,
-			thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		}, {
-			original: ImageTwelve,
-			thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		},
+		},	
 		{
-			original: ImageThirteen,
+			original: ImageFive,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ImageFourteen,
+			original: ImageSix,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ImageFifteen,
-			thumbnail: "https://picsum.photos/id/1019/250/150/",
+			original: ImageSeven,
+			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		},
 		{
-			original:ImageSixteen,
-			thumbnail: "https://picsum.photos/id/1019/250/150/",
+			original: ImageEight,
+			thumbnail: 'https://picsum.photos/id/1019/250/150/',
+		}, {
+			original: ImageNine,
+			thumbnail: 'https://picsum.photos/id/1019/250/150/',
+		}, {
+			original: ImageTen,
+			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		},
-		{
-			original: ImageSeventeen,
-			thumbnail: "https://picsum.photos/id/1019/250/150/",
-		},
-		{
-			original: ImageSeventeenTwo,
-			thumbnail: "https://picsum.photos/id/1019/250/150/",
-		},
-		{
-			original: ImageSeventeenThree,
-			thumbnail: "https://picsum.photos/id/1019/250/150/",
-		},
-		{
-			original:ImageEighteen,
-			thumbnail: "https://picsum.photos/id/1019/250/150/",
-		}
-	]
+	];
 	
 	const renderThumbInner = () => {
 		return <div className="thumb-custom-dot" />;
@@ -110,9 +103,9 @@ const TruflowPumpsComponent=()=>{
 				</Col>
 				<Col>
 					<div className="img-background">
-						<img src={TruFlow} style={{ width: 200 }} />
+						<img src={MudexLogo} style={{ width: 200 }} />
 					</div>
-					<h3 className="text-start my-3" >Truflo Pumping Systems</h3>
+					<h3 className="text-start my-3" >Mudex Additives</h3>
 					<p>
 						We provide truflo pumping systems tailored to meet the most demanding industrial needs. They make use of cutting-edge technology that  ensures efficient and reliable fluid handling across various applications, from mining to water treatment.  
 					</p>
@@ -125,4 +118,4 @@ const TruflowPumpsComponent=()=>{
 		</div>
 	)
 }
-export default  TruflowPumpsComponent;
+export default  MudexAdditivesComponent;

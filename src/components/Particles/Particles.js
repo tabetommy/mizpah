@@ -43,20 +43,20 @@ const ParticlesBackground = () => {
 			  },
 			  modes: {
 				  push: {
-					  quantity: 4,
+					  quantity: 1,
 				  },
 				  repulse: {
-					  distance: 200,
-					  duration: 0.6,
+					  distance: 500,
+					  duration: 0.3,
 				  },
 			  },
 		  },
 		 particles: {
 			 number: {
-				 value: 100,
+				 value: 250,
 				 density: {
 					 enable: true,
-					 value_area: 1500
+					 value_area: 2000
 				 }
 			 },
 			 line_linked: {
@@ -68,7 +68,7 @@ const ParticlesBackground = () => {
 				 speed: 0.05
 			 },
 			 size: {
-				 value: 1
+				 value: 1.3
 			 },
 			 opacity: {
 				 anim: {
@@ -87,7 +87,7 @@ const ParticlesBackground = () => {
 			 },
 			 modes: {
 				 push: {
-					 "particles_nb": 1
+					 "particles_nb": 2
 				 }
 			 }
 		 },
