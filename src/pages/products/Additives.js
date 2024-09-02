@@ -21,22 +21,6 @@ import ImageEight from "../../assets/image 8.png";
 import ImageNine from "../../assets/image 9.png";
 import ImageTen from "../../assets/image 10.png";
 
-import ProductsTwo from "../../assets/products_2.png";
-import ProductsThree from "../../assets/products_3.png";
-import ProductsFour from "../../assets/products_4.png";
-import ProductsFive from "../../assets/products_5.png";
-import ImageEleven from "../../assets/image 11.png";
-import ImageTwelve from "../../assets/image 12.png";
-import ImageThirteen from "../../assets/image 13.png";
-import ImageFourteen from "../../assets/image 14.png";
-import ImageFifteen from "../../assets/image 15.png";
-import ImageSixteen from "../../assets/image 16.png";
-import ImageSeventeen from "../../assets/jumbo-pump-1.png";
-import ImageSeventeenTwo from "../../assets/jumbo-pump-2.png";
-import ImageSeventeenThree from "../../assets/jumbo-pump-3.png";
-import ImageEighteen from "../../assets/image 18.png";
-
-
 
 
 

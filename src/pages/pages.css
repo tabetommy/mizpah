@@ -153,8 +153,43 @@
 
 
 /*** SERVICES ***/
-.main-painting{
-	background-image:url("../assets/corrosion-protection.jpg");
+.main-con-service{
+	background-image:url("../assets/services/service-const2.jpeg");
+	height:60vh;
+	position: relative;
+	z-index: 1;
+}
+
+.main-con-service:after{
+	background: hsl(219, 30%, 18%);
+  	bottom: 0;
+  	content: '';
+  	display: block;
+  	height: 90px;
+  	left: 0;
+  	position: absolute;
+  	right: 0;
+  	transform: skewY(-2deg);
+  	transform-origin: 100%;
+  	z-index: -1;
+}
+
+.service-heading h1{
+	color: rgb(38, 216, 202);
+	text-align: left;
+}
+
+
+.sec-image{
+	background-image:url("../assets/services/services-const.jpeg");
+	background-size: cover; 
+	background-position: center; 
+	background-repeat: no-repeat; 
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 
@@ -208,6 +243,7 @@
 .image-gallery-right-nav {
 	display: none;
 }
+
 
 
 

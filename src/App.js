@@ -9,7 +9,7 @@ import Products from "./pages/Products";
 import Services from "./pages/Services";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeOperate from "./pages/WhereWeOperate";
-import Painting from "./pages/services/Painting";
+import ConstructionServices from "./pages/services/ConstructionServices";
 import TruflowPumpsComponent from "./pages/products/PumpsTruflow";
 import BartailPumpsComponent from "./pages/products/PumpsBartail";
 import TKKGearsComponent from "./pages/products/TKKHoistCrane";
@@ -50,7 +50,7 @@ function App() {
           />
         }
       />
-      <Route path="/services/sandblasting" element={<Painting />} />
+      <Route path="/services/sandblasting" element={<WhatWeDo />} />
       <Route
         path="/services/corrosion"
         element={
@@ -81,16 +81,7 @@ function App() {
           />
         }
       />
-      <Route
-        path="/services/construction"
-        element={
-          <GenericPageLayout
-            component={<WhatWeDo />}
-            title="What we do"
-            route="what-we-do"
-          />
-        }
-      />
+      <Route path="/services/construction" element={<ConstructionServices />}/>
       <Route path="/products/pumps/truflo" element={<TruflowPumpsComponent />}/>
       <Route path="/products/pumps/bartail" element={<BartailPumpsComponent />}/>
       <Route path="/products/additives" element={<MudexAdditivesComponent  />}/>
