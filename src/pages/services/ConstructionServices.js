@@ -23,9 +23,13 @@ const ConstructionServices=()=>{
 						
 					</Col>
 				</Row>
-				<Row className='my-5'>
-					<Col>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+				<Row className='my-5' >
+					<Col style={{paddingRight:"50px"}}>
+						<p>
+							Mizpah is your trusted partner in comprehensive construction services. We specialize in delivering top-notch contruction works including plumbing, piping and tank installations, ensuring your projects are built to last with safety and efficiency in mind.
+						</p>
+						<p className='my-5'>
+							At Mizpah, we are committed to delivering high-quality construction services that integrate seamlessly with your project’s needs. With our experienced team and dedication to excellence, you can trust us to bring your vision to life. Contact us today to learn more about how we can support your next construction project.
 						</p>
 					</Col>
 					<Col  className="sec-image">
@@ -33,6 +37,9 @@ const ConstructionServices=()=>{
 					</Col>
 				</Row>
 			</Container>
+			<div className='margin-to-footer'>
+				fdfd
+			</div>
 			<Footer />
 		</div>
 	)

@@ -1,4 +1,8 @@
 /* HOME */
+.margin-to-footer{
+	visibility: hidden;
+	margin: 100px;
+}
 
 .home-main-container{
 	background-image:url("../assets/about-unsplash.jpg");
