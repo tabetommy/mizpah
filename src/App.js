@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeOperate from "./pages/WhereWeOperate";
 import ConstructionServices from "./pages/services/ConstructionServices";
+import PumpingService from "./pages/services/PumpingService";
 import TruflowPumpsComponent from "./pages/products/PumpsTruflow";
 import BartailPumpsComponent from "./pages/products/PumpsBartail";
 import TKKGearsComponent from "./pages/products/TKKHoistCrane";
@@ -22,13 +23,7 @@ function App() {
       <Route path="/about-us" element={<AboutUs />} />
       <Route
         path="/services/pumping"
-        element={
-          <GenericPageLayout
-            component={<WhatWeDo />}
-            title="What we do"
-            route="what-we-do"
-          />
-        }
+        element={<PumpingService/>}
       />
       <Route
         path="/services/machinery"
