@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/mizpah/static/css/main.44427920.css",
-    "main.js": "/mizpah/static/js/main.4e1dd3d3.js",
+    "main.css": "/mizpah/static/css/main.ae8d2caf.css",
+    "main.js": "/mizpah/static/js/main.269a042d.js",
     "static/js/787.cda612ba.chunk.js": "/mizpah/static/js/787.cda612ba.chunk.js",
+    "static/media/pump-repairs.mp4": "/mizpah/static/media/pump-repairs.f72dff459741dd0f14f0.mp4",
     "static/media/about-unsplash.jpg": "/mizpah/static/media/about-unsplash.160cf58a8f1a0be1952c.jpg",
     "static/media/products_1.png": "/mizpah/static/media/products_1.9e00732bc0510c3619fc.png",
     "static/media/products_2.png": "/mizpah/static/media/products_2.7bda9cbdc4a7bd027b0c.png",
@@ -31,6 +32,7 @@
     "static/media/service-const2.jpeg": "/mizpah/static/media/service-const2.a5845becb5818ea9573d.jpeg",
     "static/media/about-main.jpeg": "/mizpah/static/media/about-main.b5cdd7691d81dc69df86.jpeg",
     "static/media/image 20.png": "/mizpah/static/media/image 20.ce18dd45ae2ce9f17bf2.png",
+    "static/media/pump-repairs-1.jpeg": "/mizpah/static/media/pump-repairs-1.d6c2f7295993b397261d.jpeg",
     "static/media/image 25.png": "/mizpah/static/media/image 25.1a9895ffbe74d3d3c958.png",
     "static/media/IMG-20221123-WA0020.jpg": "/mizpah/static/media/IMG-20221123-WA0020.4c1e5549baab3f067fff.jpg",
     "static/media/image 7.png": "/mizpah/static/media/image 7.09d9349cb0f7ca473492.png",
@@ -94,12 +96,12 @@
     "static/media/corrotion.svg": "/mizpah/static/media/corrotion.594895600943aab4a2b8e7216c75a8d2.svg",
     "static/media/tanks.svg": "/mizpah/static/media/tanks.dbf1fca551fbc7362c7c7bfc60c1e3fe.svg",
     "static/media/painting.svg": "/mizpah/static/media/painting.cbc887d560d9a417ec08cd2e48fc3704.svg",
-    "main.44427920.css.map": "/mizpah/static/css/main.44427920.css.map",
-    "main.4e1dd3d3.js.map": "/mizpah/static/js/main.4e1dd3d3.js.map",
+    "main.ae8d2caf.css.map": "/mizpah/static/css/main.ae8d2caf.css.map",
+    "main.269a042d.js.map": "/mizpah/static/js/main.269a042d.js.map",
     "787.cda612ba.chunk.js.map": "/mizpah/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44427920.css",
-    "static/js/main.4e1dd3d3.js"
+    "static/css/main.ae8d2caf.css",
+    "static/js/main.269a042d.js"
   ]
 }
