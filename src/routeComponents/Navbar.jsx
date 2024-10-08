@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="desktop-nav">
       <ul className="menus">
-        {menuItemsData.map((menu, index) => {
+        {menuItemsData.filter(item=>item.title!=="Contact").map((menu, index) => {
           return <MenuItems items={menu} key={index} depthLevel={depthLevel} />;
         })}
       </ul>

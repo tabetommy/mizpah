@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import WhatWeDo from "./pages/WhatWeDo";
 import WhereWeOperate from "./pages/WhereWeOperate";
 import ConstructionServices from "./pages/services/ConstructionServices";
+import SandblastingServices from "./pages/services/Sandblasting";
 import PumpingService from "./pages/services/PumpingService";
 import TruflowPumpsComponent from "./pages/products/PumpsTruflow";
 import BartailPumpsComponent from "./pages/products/PumpsBartail";
@@ -35,29 +36,9 @@ function App() {
           />
         }
       />
-      <Route
-        path="/services/tanks"
-        element={
-          <GenericPageLayout
-            component={<WhatWeDo />}
-            title="What we do"
-            route="what-we-do"
-          />
-        }
-      />
-      <Route path="/services/sandblasting" element={<WhatWeDo />} />
+      
       <Route
         path="/services/corrosion"
-        element={
-          <GenericPageLayout
-            component={<WhatWeDo />}
-            title="What we do"
-            route="what-we-do"
-          />
-        }
-      />
-      <Route
-        path="/services/plumbing"
         element={
           <GenericPageLayout
             component={<WhatWeDo />}
@@ -76,6 +57,7 @@ function App() {
           />
         }
       />
+      <Route path="/services/sandblasting" element={<SandblastingServices />} />
       <Route path="/services/construction" element={<ConstructionServices />}/>
       <Route path="/products/pumps/truflo" element={<TruflowPumpsComponent />}/>
       <Route path="/products/pumps/bartail" element={<BartailPumpsComponent />}/>
@@ -93,16 +75,7 @@ function App() {
           />
         }
       />
-      <Route
-        path="/contact-us"
-        element={
-          <GenericPageLayout
-            component={<ContactUs />}
-            title="Contact Us"
-            route="contact-us"
-          />
-        }
-      />
+      <Route path="/contact-us" element={<ContactUs />}/>
       <Route
         path="/where-we-operate"
         element={

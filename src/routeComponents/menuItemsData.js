@@ -20,20 +20,12 @@ export const menuItemsData = [
 		  url: "/services/machinery",
 	  },
 	  {
-		  title: "Tanks and Pipe Works",
-		  url: "/services/tanks",
-	  },
-	  {
 		  title: "Sandblasting & Painting",
 		  url: "/services/sandblasting",
 	  },
 	 {
 		  title: "Corrosion Protection",
 		  url: "/services/corrosion",
-	  },
-	  {
-		  title: "Plumbing Works",
-		  url: "/services/plumbing",
 	  },
 	  {
 		  title: "Electrical Works",
@@ -73,5 +65,8 @@ export const menuItemsData = [
 	  },
 	],
   },
-  
+  {
+	  title: "Contact",
+	  url: "/contact-us",
+	},
 ];

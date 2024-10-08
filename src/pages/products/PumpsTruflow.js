@@ -26,12 +26,14 @@ import ImageSeventeenThree from "../../assets/jumbo-pump-3.png";
 import ImageEighteen from "../../assets/image 18.png";
 import TruFlow from "../../assets/truflow.webp";
 
+import { useNavigate } from "react-router-dom";
+
 
 
 
 
 const TruflowPumpsComponent=()=>{
-
+   const navigate = useNavigate();
 	
 	const imagesArrss=[
 		
@@ -95,10 +97,21 @@ const TruflowPumpsComponent=()=>{
 		<div>
 			<Header/>
 			<ParticlesBackground />
-			<div style={{margin:'350px'}}>
-			</div>
-			<Container>
-			  <Row>
+			<Container className="truflo-con" >
+			  <Row className="flex-column">
+				<Col>
+					<div className="img-background">
+						<img src={TruFlow} style={{ width: 200 }} />
+					</div>
+					<h3 className="text-start my-3" >Truflo Pumping Systems</h3>
+					<p className="mb-5">
+						We provide truflo pumping systems tailored to meet the most demanding industrial needs. They make use of cutting-edge technology that  ensures efficient and reliable fluid handling across various applications, from mining to water treatment. <br/><br/>
+						<span 
+						className='page-contact-btn'
+						onClick={()=>navigate('/contact-us')}
+						 >Contact us to find out more</span>
+					</p>
+				</Col>
 				<Col>
 					<ImageGallery 
 					items={imagesArrss} 
@@ -108,19 +121,8 @@ const TruflowPumpsComponent=()=>{
 					autoPlay={true} 
 					/>
 				</Col>
-				<Col>
-					<div className="img-background">
-						<img src={TruFlow} style={{ width: 200 }} />
-					</div>
-					<h3 className="text-start my-3" >Truflo Pumping Systems</h3>
-					<p>
-						We provide truflo pumping systems tailored to meet the most demanding industrial needs. They make use of cutting-edge technology that  ensures efficient and reliable fluid handling across various applications, from mining to water treatment.  
-					</p>
-				</Col>
 			  </Row>
 			</Container>
-			<div style={{margin:'200px'}}>
-			</div>
 			<Footer />
 		</div>
 	)

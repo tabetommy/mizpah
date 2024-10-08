@@ -14,10 +14,10 @@ function AboutUs() {
      <Header />
      <ParticlesBackground />
      <div className="about-main-container">
-       <div className="home-contents">
+       <div className="container">
            <section className="heading-para img-title">
              <h1>About</h1>
-             <p>Who we are, Our Mission and Vision</p>
+             <p className="text-center">Who we are, Our Mission and Vision</p>
            </section>
        </div>
        <ScrollComponent scrollreference={scrollRef}/>

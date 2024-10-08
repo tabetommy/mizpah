@@ -4,7 +4,7 @@ import ParticlesBackground from "../../components/Particles/Particles";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import { useNavigate } from "react-router-dom";
 import MudexLogo from "../../assets/Mudex.png";
 
 import ImageGallery from "react-image-gallery";
@@ -26,7 +26,7 @@ import ImageTen from "../../assets/image 10.png";
 
 const MudexAdditivesComponent=()=>{
 
-	
+	const navigate = useNavigate();
 	const imagesArrss=[
 		{
 			original: ImageOne,
@@ -72,10 +72,24 @@ const MudexAdditivesComponent=()=>{
 		<div>
 			<Header/>
 			<ParticlesBackground />
-			<div style={{margin:'350px'}}>
-			</div>
-			<Container>
-			  <Row>
+			<Container className="truflo-con">
+			  <Row className='my-5 flex-column'>
+				<Col>
+					<div className="img-background">
+						<img src={MudexLogo} style={{ width: 200 }} />
+					</div>
+					<h3 className="text-start my-3" >Mudex Additives</h3>
+					<p>
+						At MIZPAH, we specialize in providing high-quality Mudex additives designed to enhance the performance and efficiency of drilling fluids. Our products ensure optimal drilling operations, reducing costs and increasing productivity through superior fluid stabilization, viscosity control, and filtration management.  
+					</p>
+					<p className="mb-5">
+					   Our range includes viscosifiers, filtration control agents, lubricants, and lost circulation materials, all engineered to improve performance and reduce downtime.  <br/><br/>
+					   <span 
+					   className='page-contact-btn'
+					   onClick={()=>navigate('/contact-us')}
+						>Contact us to find out more</span>
+					</p>
+				</Col>
 				<Col>
 					<ImageGallery 
 					items={imagesArrss} 
@@ -85,19 +99,8 @@ const MudexAdditivesComponent=()=>{
 					autoPlay={true} 
 					/>
 				</Col>
-				<Col>
-					<div className="img-background">
-						<img src={MudexLogo} style={{ width: 200 }} />
-					</div>
-					<h3 className="text-start my-3" >Mudex Additives</h3>
-					<p>
-						We provide truflo pumping systems tailored to meet the most demanding industrial needs. They make use of cutting-edge technology that  ensures efficient and reliable fluid handling across various applications, from mining to water treatment.  
-					</p>
-				</Col>
 			  </Row>
 			</Container>
-			<div style={{margin:'200px'}}>
-			</div>
 			<Footer />
 		</div>
 	)

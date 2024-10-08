@@ -16,15 +16,14 @@ import ImageTwentyThree from "../../assets/image 23.png";
 import ImageTwentyFour from "../../assets/image 24.png";
 import ImageTwentyFive from "../../assets/image 25.png";
 import ImageTwentySix from "../../assets/image 26.png";
-
-
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const TKKGearsComponent=()=>{
 
-	
+	const navigate = useNavigate();
 	const imagesArrss=[
 		
 		{
@@ -51,10 +50,21 @@ const TKKGearsComponent=()=>{
 		<div>
 			<Header/>
 			<ParticlesBackground />
-			<div style={{margin:'350px'}}>
-			</div>
-			<Container>
-			  <Row>
+			<Container className="truflo-con">
+			  <Row className='my-5 flex-column'>
+				<Col>
+					<div className="img-background">
+						<img src={TKKLogo} style={{ width: 200 }} />
+					</div>
+					<h3 className="text-start my-3" >TKK Hoist & Crane</h3>
+					<p className="mb-5">
+						We specialize in supplying high-quality TKK lifting gears, renowned for their reliability, safety, durability and efficiency. Our extensive range includes electric chain hoists, wire rope hoists, manual chain hoists, and more, designed to meet the rigorous demands of various industries.  <br/><br/>
+						<span 
+						className='page-contact-btn'
+						onClick={()=>navigate('/contact-us')}
+						 >Contact us to find out more</span>
+					</p>
+				</Col>
 				<Col>
 					<ImageGallery 
 					items={imagesArrss} 
@@ -64,19 +74,8 @@ const TKKGearsComponent=()=>{
 					autoPlay={true} 
 					/>
 				</Col>
-				<Col>
-					<div className="img-background">
-						<img src={TKKLogo} style={{ width: 200 }} />
-					</div>
-					<h3 className="text-start my-3" >TKK Hoist & Crane</h3>
-					<p>
-						We provide truflo pumping systems tailored to meet the most demanding industrial needs. They make use of cutting-edge technology that  ensures efficient and reliable fluid handling across various applications, from mining to water treatment.  
-					</p>
-				</Col>
 			  </Row>
 			</Container>
-			<div style={{margin:'200px'}}>
-			</div>
 			<Footer />
 		</div>
 	)
