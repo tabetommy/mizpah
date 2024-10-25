@@ -10,8 +10,6 @@ import TKKLogo from "../../assets/hoistandcrane.png";
 import ImageGallery from "react-image-gallery";
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-
-import AustralianMadeLogo from "../../assets/austalianmade.png";
 import ImageTwentyThree from "../../assets/image 23.png";
 import ImageTwentyFour from "../../assets/image 24.png";
 import ImageTwentyFive from "../../assets/image 25.png";

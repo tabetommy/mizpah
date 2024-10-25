@@ -24,16 +24,11 @@ import ParticlesBackground from "../components/Particles/Particles.js";
 
 import Pump from "../assets/tools-svgrepo-com.svg"; 
 import Construction from "../assets/construction.svg";
-import Thruflo from "../assets/image 16.png";
-import Bartail from "../assets/image 22.png";
+import Thruflo from "../assets/productimages/truflo_506.png";
 import Mudex from "../assets/image 1.png";
-import Tkk from "../assets/image 23.png";
-import Machine from "../assets/machinery.svg"; 
-import Electric from "../assets/electric.svg"; 
+import Tkk from "../assets/image_23_506.png";
 import Paint from "../assets/painting.svg";
-import Corrotion from "../assets/corrotion.svg";
 import { useMediaQuery } from "react-responsive";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import "bootstrap-icons/font/bootstrap-icons.css";
 import './pages.css';
@@ -70,7 +65,7 @@ function Home() {
           </section>
           <section className="container">
             <div className="row my-5 d-md-flex">
-               <div className="col-lg-4 col-md-6 col-12 text-center p-5">
+               <div className="col-xxl-4 col-lg-12 text-center p-5">
                  <img src={Pump} style={{width:'60px'}} alt="Pump repairs"/>
                  <h3 className="pt-2">Pump Repairs</h3>
                  <p>
@@ -82,21 +77,9 @@ function Home() {
                     </span>
                  </p>
                </div>
-               <div className="col-lg-4 col-md-6 col-12 text-center p-5">
-                  <img src={Machine} style={{width:'60px'}} alt="Machinery Hiring"/>
-                  <h3 className="pt-2">Machinery Hiring</h3>
-                   <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                      <br/>
-                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
-                      Find out more 
-                      <i className="bi bi-arrow-right px-1"></i> 
-                      </span>
-                   </p>
-                </div>
-                <div className="col-lg-4 col-md-6 col-12 text-center p-5">
-                  <img src={Paint} style={{width:'60px'}} alt="Sandblasting And Painting"/>
-                  <h3 className="pt-2">Sandblasting & Painting</h3>
+                <div className="col-xxl-4 col-lg-12 text-center p-5">
+                  <img src={Paint} style={{width:'60px'}} alt="Sandblasting/Painting & Corrosion Protection"/>
+                  <h3 className="pt-2">Sandblasting/Painting & Corrosion Protection</h3>
                    <p>
                       Our expert team provides top-notch sand blasting and painting services to rejuvenate and protect your surfaces.
                       <br/>
@@ -106,33 +89,7 @@ function Home() {
                       </span>
                    </p>
                 </div>
-            </div>
-            <div className="row my-5">
-                <div className="col-lg-4 col-md-6 col-12 text-center p-5">
-                  <img src={Corrotion} style={{width:'60px'}} alt="Corrotion Protection"/>
-                  <h3 className="pt-2">Corrotion Protection</h3>
-                   <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                      <br/>
-                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
-                      Find out more 
-                      <i className="bi bi-arrow-right px-1"></i> 
-                      </span>
-                   </p>
-                </div>
-                <div className="col-lg-4 col-md-6 col-12 col-sm-12 text-center p-5">
-                  <img src={Electric} style={{width:'60px'}} alt="Electrical works"/>
-                  <h3 className="pt-2">Electrical works</h3>
-                   <p>
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                      <br/>
-                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
-                      Find out more 
-                      <i className="bi bi-arrow-right px-1"></i> 
-                      </span>
-                   </p>
-                </div>
-                <div className="col-lg-4 col-md-6 col-12 col-sm-12 text-center p-5">
+                <div className="col-xxl-4 col-lg-12 text-center p-5">
                   <img src={Construction} style={{width:'60px'}} alt="construction services"/>
                   <h3 className="pt-2">Constuction Works</h3>
                    <p>
@@ -151,8 +108,8 @@ function Home() {
       <div className="home-contentsssss ">
           <section className="container text-white heading-para">
             <h1>Who we are</h1>
-            <p className="mb-5">
-              Welcome to MIZPAH, where innovation meets reliability. With decades of experience, we proudly supply top-tier goods and services across diverse fields such as construction, water pumping, drilling, and beyond. Our expertise drives your projects forward, from groundbreaking infrastructure to seamless water solutions.
+            <p className="mb-5 text-center ">
+              Welcome to MIZPAH, where innovation meets reliability <br/>With decades of experience, we proudly supply top-tier goods and services across diverse fields such as construction, water pumping, drilling, and beyond. Our expertise drives your projects forward, from groundbreaking infrastructure to seamless water solutions.
             </p>
            <p className="text-center">
               <span 
@@ -165,20 +122,17 @@ function Home() {
       <div className="home-contents">
       
           <section className="heading-para">
-            <h1 className="white-header">
-              Our Products
-              {/* <hr className="centered-line" width="500px"/> */}
-              </h1>
+            <h1 className="white-header"> Our Products</h1>
           </section>
          <section className="container home-prod-con">
            <div className="row my-5">
-            <div className="col-xxl-3 col-xl-6 col-12 my-4">
+            <div className="col-xxl-4 col-lg-12 my-4">
               <Card className="d-flex flex-column">
                 <Card.Img variant="top" src={Thruflo} />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>Thruflo Pumping systems</Card.Title>
                   <Card.Text className="mb-3" >
-                    We provide truflo pumping systems tailored to meet the most demanding industrial needs.
+                    We provide truflo pumping systems tailored to meet the most demanding industrial needs. <span className="text-white">xxxxxxxxxxxxxxxxxxxxx</span>
                   </Card.Text>
                   <div className="mt-auto" onClick={()=>navigate('/products/pumps/truflo')}>
                     <span className="home-prod-btn">Find out more</span>
@@ -186,21 +140,7 @@ function Home() {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-xxl-3 col-xl-6 col-12 my-4">
-              <Card className="d-flex flex-column">
-                <Card.Img variant="top" src={Bartail} />
-                <Card.Body className="d-flex flex-column">
-                  <Card.Title>Bartail Pumps</Card.Title>
-                  <Card.Text className="mb-3">
-                    MIZPAH is your trusted partner for high-quality bartail pumps.
-                  </Card.Text>
-                  <div className="mt-auto" onClick={()=>navigate('/products/pumps/bartail')}>
-                    <span className="home-prod-btn">Find out more</span>
-                  </div>
-                </Card.Body>
-              </Card>
-            </div>
-            <div className="col-xxl-3 col-xl-6 col-12 my-4">
+            <div className="col-xxl-4 col-lg-12 my-4">
               <Card className="d-flex flex-column">
                 <Card.Img variant="top" src={Mudex}/>
                 <Card.Body className="d-flex flex-column">
@@ -214,13 +154,14 @@ function Home() {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-xxl-3 col-xl-6 col-12 my-4">
+            <div className="col-xxl-4 col-lg-12 my-4">
               <Card className="d-flex flex-column">
                 <Card.Img variant="top" src={Tkk}/>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>Lifting Gears/Equipments</Card.Title>
                   <Card.Text className="mb-3">
-                    We supply  high-quality TKK lifting gears/equipments.
+                    We supply  high-quality TKK lifting gears/equipments. <span className="text-white">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx</span>
+                    
                   </Card.Text> 
                  <div className="mt-auto" onClick={()=>navigate('/products/gears')}>
                    <span className="home-prod-btn">Find out more</span>

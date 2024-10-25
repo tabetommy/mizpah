@@ -17,7 +17,7 @@ const SandblastingServices=()=>{
 				 	<p className='page-para'>
 					 	Our expert team provides top-notch sand blasting and painting services to rejuvenate and protect your surfaces. Using advanced techniques and high-quality materials, we ensure thorough cleaning and preparation of surfaces, removing rust, old paint, and contaminants.
 				 	</p>
-				 	<p className='page-para'>
+				 	<p className='page-para pb-4'>
 					 	Our painting services offer durable and aesthetically pleasing finishes, tailored to meet your specific needs. Whether it’s for industrial, commercial, or residential projects, we deliver exceptional results that enhance the longevity and appearance of your assets.<br /><br />
 						 <span 
 						 className='page-contact-btn'

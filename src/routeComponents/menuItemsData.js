@@ -16,20 +16,8 @@ export const menuItemsData = [
 		url: "/services/pumping",
 	  },
 	  {
-		  title: "Machinery Hiring",
-		  url: "/services/machinery",
-	  },
-	  {
-		  title: "Sandblasting & Painting",
+		  title: "Sandblasting/Painting & orrosion Protection",
 		  url: "/services/sandblasting",
-	  },
-	 {
-		  title: "Corrosion Protection",
-		  url: "/services/corrosion",
-	  },
-	  {
-		  title: "Electrical Works",
-		  url: "/services/electric",
 	  },
 	  {
 		  title: "Construction Works",
@@ -48,10 +36,6 @@ export const menuItemsData = [
 		  {
 			title: "TRUFLO Pumping Systems",
 			url: "/products/pumps/truflo",
-		  },
-		  {
-			title: "Bartail",
-			url: "/products/pumps/bartail",
 		  },
 		],
 	  },
