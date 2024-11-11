@@ -15,9 +15,9 @@ function AboutUs() {
      <ParticlesBackground />
      <div className="about-main-container">
        <div className="container">
-           <section className="heading-para img-title">
+           <section className="text-white blast-paint-cont img-title">
              <h1>About</h1>
-             <p className="text-center">Who we are, Our Mission and Vision</p>
+             <p className="mb-5 text-center page-para home-text py-3">Who we are, Our Mission and Vision</p>
            </section>
        </div>
        <ScrollComponent scrollreference={scrollRef}/>

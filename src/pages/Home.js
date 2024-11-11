@@ -50,9 +50,12 @@ function Home() {
       <Header/>
       <ParticlesBackground />
       <div className="home-main-container">
-        <div className="container home-title-con">
-         <h1 className="intro-title"> Discover the MIZPAH difference, where cutting-edge technology and <br/>exceptional service  converge to create unparalleled value for our clients.<br/><span className="home-title-CTA">Join us in building a sustainable future, one project at a time.</span></h1>
-        </div>
+        <section className="container text-white blast-paint-cont">
+          <h1>Discover the MIZPAH Experience</h1>
+          <p className="mb-5 py-5 text-center page-para home-text">
+           where cutting-edge technology and <br/>exceptional service  converge to create unparalleled value for our clients.<br/><span className="home-title-CTA">Join us in building a sustainable future, one project at a time.</span>
+          </p>
+        </section>
         <ScrollComponent scrollreference={scrollRef}/>
       </div>
       <div className="home-contents" ref={scrollRef}>
@@ -106,17 +109,19 @@ function Home() {
          
       </div>
       <div className="home-contentsssss ">
-          <section className="container text-white heading-para">
+          <section className="container text-white heading-para blast-paint-cont">
             <h1>Who we are</h1>
-            <p className="mb-5 text-center ">
+            <p className="mb-5 py-5 text-center page-para home-text ">
               Welcome to MIZPAH, where innovation meets reliability <br/>With decades of experience, we proudly supply top-tier goods and services across diverse fields such as construction, water pumping, drilling, and beyond. Our expertise drives your projects forward, from groundbreaking infrastructure to seamless water solutions.
+              
+              <p className="text-center mt-4">
+                  <span 
+                  className="transparent-btn"
+                  onClick={()=>navigate('/about-us')}
+                  >Get to know us more</span>
+               </p>
             </p>
-           <p className="text-center">
-              <span 
-              className="transparent-btn"
-              onClick={()=>navigate('/about-us')}
-              >Get to know us more</span>
-           </p>
+           
           </section>
       </div>
       <div className="home-contents">

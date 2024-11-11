@@ -3,7 +3,9 @@
 	visibility: hidden;
 	margin: 100px;
 }
-
+.home-text{
+	font-size: 1.5rem;
+}
 .home-main-container{
 	background-image:url("../assets/about-unsplash.jpg");
 	background-size: cover; 
@@ -37,16 +39,16 @@
 }
 
 .transparent-btn{
-	border: #fff solid 3px;
 	padding: 16px 30px;
 	border-radius: 36px;
 	cursor:pointer;
 	font-size: 20px;
+	background-color: rgb(38, 216, 202);
 	transition: background-color 0.5s, color ease-in;
 }
 
 .transparent-btn:hover{
-	background-color: #fff;
+	background-color: rgba(38, 216, 202,0.4);
 	color: #000;
 }
 
@@ -369,6 +371,7 @@ video{
 @media screen and (max-width: 768px) {
   .intro-title{
 	  line-height: 1.9;
+	  font-size: 24px;
   }
  
 }
@@ -376,6 +379,7 @@ video{
 @media screen and (max-width: 380px) {
   .intro-title{
 	  line-height: 1.9;
+	  font-size: 20px
   }
   
   .home-title-CTA{

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mizpah/static/css/main.1c61c5ca.css",
-    "main.js": "/mizpah/static/js/main.1f07704f.js",
+    "main.css": "/mizpah/static/css/main.150691e1.css",
+    "main.js": "/mizpah/static/js/main.27975084.js",
     "static/js/787.cda612ba.chunk.js": "/mizpah/static/js/787.cda612ba.chunk.js",
     "static/media/pump-repairs.mp4": "/mizpah/static/media/pump-repairs.f72dff459741dd0f14f0.mp4",
     "static/media/about-unsplash.jpg": "/mizpah/static/media/about-unsplash.160cf58a8f1a0be1952c.jpg",
@@ -63,12 +63,12 @@
     "static/media/tools-svgrepo-com.svg": "/mizpah/static/media/tools-svgrepo-com.3355bb469da8b2d0a89efb9247b931d8.svg",
     "static/media/construction.svg": "/mizpah/static/media/construction.7aef670e1d8c965cc2d5e85405987142.svg",
     "static/media/painting.svg": "/mizpah/static/media/painting.cbc887d560d9a417ec08cd2e48fc3704.svg",
-    "main.1c61c5ca.css.map": "/mizpah/static/css/main.1c61c5ca.css.map",
-    "main.1f07704f.js.map": "/mizpah/static/js/main.1f07704f.js.map",
+    "main.150691e1.css.map": "/mizpah/static/css/main.150691e1.css.map",
+    "main.27975084.js.map": "/mizpah/static/js/main.27975084.js.map",
     "787.cda612ba.chunk.js.map": "/mizpah/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c61c5ca.css",
-    "static/js/main.1f07704f.js"
+    "static/css/main.150691e1.css",
+    "static/js/main.27975084.js"
   ]
 }
