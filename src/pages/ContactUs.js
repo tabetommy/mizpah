@@ -10,6 +10,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScrollComponent from "./scrollcomponent/scroll";
 import emailjs from 'emailjs-com';
+import WhereWeOperate from './WhereWeOperate';
 
 const SERVICE_ID = "service_pocvf9l";
 const TEMPLATE_ID = "template_1bsizph";
@@ -44,7 +45,8 @@ const ContactUs = () => {
       <Header />
       <ParticlesBackground />
       
-      <div className="home-main-container">
+      <WhereWeOperate/>
+      {/* <div className="home-main-container">
         <div className="home-contents">
          <h1 className="contact-title">Get in Touch</h1>
          <p className='page-para'>
@@ -52,8 +54,7 @@ const ContactUs = () => {
          Please use our contact form. We look forward to hearing from you!
          </p>
         </div>
-      </div>
-      <ScrollComponent scrollreference={scrollRef}/>
+      </div> */}
       
       <Container className='contact-form-main'>
         <Row>
