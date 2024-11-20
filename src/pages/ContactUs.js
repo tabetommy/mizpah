@@ -89,8 +89,8 @@ const ContactUs = () => {
           </Container>
           </Col>
           <Col md={4}>
-          <div className='px-5'>
-            <p style={{fontSize:"24px"}}>CONTACT INFORMATION</p>
+          <div className="px-md-5 py-sm-5 con-info-box">
+            <p style={{fontSize:"24px", fontWeight:"600"}}>CONTACT INFORMATION</p>
             <div className='my-3 contact-item'>
               <i class="bi bi-telephone-outbound-fill" style={{fontSize: "1.3rem"}}></i>
               <a href='tel:+233(0)322499410' className='contact-link'>+233(0)322499410</a>

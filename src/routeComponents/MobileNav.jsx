@@ -28,7 +28,7 @@ const MobileNav = () => {
         className="mobile-nav__menu-button"
         type="button"
         onClick={() => setShowMenu((prev) => !prev)}>
-        <i class="bi bi-list" style={{fontSize:'28px',color:'rgb(38, 216, 202)'}}></i>
+        <i class="bi bi-list" style={{fontSize:'28px',color:'#00fa9a'}}></i>
       </button>
 
       {showMenu && (

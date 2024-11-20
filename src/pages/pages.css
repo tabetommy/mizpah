@@ -298,18 +298,7 @@ video{
 	width:600px;	
 }
 
-/* .sand-blast-main{
-	background-image:url("../assets/services/corrosion-protection.jpg");
-	background-size: cover; 
-	background-position: center; 
-	background-repeat: no-repeat; 
-	width: 100%;
-	height: 100vh;
-	background-attachment: fixed;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-} */
+
 
 .sand-blast-main{
 	background-image:url("../assets/services/corrosion-protection.jpg");
@@ -375,6 +364,8 @@ video{
 	text-decoration: none;
 	cursor: pointer;
 	padding: 0 10px;
+	font-weight: 800;
+	font-size: 14px;
 }
 
 .contact-item a:hover, .contact-item a:focus{
@@ -393,11 +384,25 @@ video{
 }
 
 
+.con-info-box{
+	background-color: var(--color-palegreen);
+	border-radius: 15px;
+}
+
+
 @media screen and (max-width: 768px) {
   .intro-title{
 	  line-height: 1.9;
 	  font-size: 24px;
   }
+
+  .con-info-box{
+	background-color:inherit;
+	border-radius: 0px;
+	}
+	.left-green-bod-line{
+		border-left: none;
+	}
  
 }
 
