@@ -305,6 +305,9 @@ video{
 	height:60vh;
 	position: relative;
 	z-index: 1;
+	background-repeat: no-repeat;
+    background-size: cover;
+	width:100%;
 }
 
 .sand-blast-main:after{

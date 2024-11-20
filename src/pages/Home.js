@@ -120,7 +120,7 @@ function Home() {
                   <Card.Text className="mb-3" >
                     We provide truflo pumping systems tailored to meet the most demanding industrial needs. <span className="text-white">xxxxxxxxxxxxxxxxxxxxx</span>
                   </Card.Text>
-                  <div className="mt-auto" onClick={()=>navigate('/products/pumps/truflo')}>
+                  <div className="mt-auto" onClick={()=>navigate('/products/truflo')}>
                     <span className="home-prod-btn">Find out more</span>
                   </div>
                 </Card.Body>

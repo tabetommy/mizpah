@@ -9,7 +9,6 @@ export const menuItemsData = [
   },
   {
 	title: "Services",
-	url: "/services",
 	submenu: [
 	  {
 		title: "Pumping Repairs",
@@ -29,15 +28,19 @@ export const menuItemsData = [
   {
 	title: "Products",
 	submenu: [
+	//   {
+	// 	title: "Pumps",
+	// 	url: "pumps",
+	// 	submenu: [
+	// 	  {
+	// 		title: "TRUFLO Pumping Systems",
+	// 		url: "/products/pumps/truflo",
+	// 	  },
+	// 	],
+	//   },
 	  {
-		title: "Pumps",
-		url: "pumps",
-		submenu: [
-		  {
-			title: "TRUFLO Pumping Systems",
-			url: "/products/pumps/truflo",
-		  },
-		],
+		title: "TRUFLO Pumping Systems",
+		url: "/products/truflo",
 	  },
 	  {
 		title: "Drilling Additives",

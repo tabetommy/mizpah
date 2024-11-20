@@ -21,7 +21,7 @@ function App() {
       <Route path="/services/pumping" element={<PumpingService/>}/>
       <Route path="/services/sandblasting" element={<SandblastingServices />} />
       <Route path="/services/construction" element={<ConstructionServices />}/>
-      <Route path="/products/pumps/truflo" element={<TruflowPumpsComponent />}/>
+      <Route path="/products/truflo" element={<TruflowPumpsComponent />}/>
       <Route path="/products/additives" element={<MudexAdditivesComponent  />}/>
       <Route path="/products/gears" element={<TKKGearsComponent />}/>
       <Route path="/contact-us" element={<ContactUs />}/>

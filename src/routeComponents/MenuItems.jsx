@@ -67,7 +67,7 @@ const MenuItems = ({ items, depthLevel }) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? "true" : "false"}>
-            {items.title}
+            <span style={{fontWeight:"600"}}>{items.title}</span>
             {depthLevel > 0 ? <span>&raquo;</span> : <span className="arrow" />}
           </button>
           <Dropdown
