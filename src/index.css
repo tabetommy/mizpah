@@ -9,6 +9,7 @@
   --color-black-grey:#060a0e;
   --color-black-grey-light:rgba(52, 73, 94, 0.75);
   --color-red: red;
+  --color-palegreen:#00fa9a;
 }
 
 body {
@@ -323,7 +324,7 @@ color:white;
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
-  background-color: var(--color-primary);
+  background-color: var(--color-palegreen);
 }
 
 .btn:before{

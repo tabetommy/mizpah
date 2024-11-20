@@ -10,6 +10,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ScrollComponent from "./scrollcomponent/scroll";
 
+import emailjs from 'emailjs-com';
+import WhereWeOperate from './WhereWeOperate';
+
 
 
 
@@ -29,7 +32,8 @@ const ContactUs = () => {
       <Header />
       <ParticlesBackground />
       
-      <div className="home-main-container">
+      <WhereWeOperate/>
+      {/* <div className="home-main-container">
         <div className="home-contents">
          <h1 className="">Get in Touch</h1>
          <p className='page-para'>
@@ -37,13 +41,14 @@ const ContactUs = () => {
          Please use our contact form. We look forward to hearing from you!
          </p>
         </div>
-      </div>
-      <ScrollComponent scrollreference={scrollRef}/>
+      </div> */}
       
       <Container className='contact-form-main'>
         <Row>
+          <Col md={8}>
+          <p style={{fontSize:"24px"}} className='px-2 pb-2'>SEND US A MESSAGE</p>
           <Container>
-            <Form noValidate onSubmit={handleOnSubmit}>
+            <Form noValidate>
               <Row>
                 <Col md={3}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -75,20 +80,17 @@ const ContactUs = () => {
            
               <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                 <Form.Label>How can we help you?</Form.Label>
-                <Form.Control as="textarea" rows={3} />
+                <Form.Control as="textarea" rows={5} />
               </Form.Group>
-              <Button variant="primary" type="submit">
+              <button className="btn btn-outline-light mt-1" onClick={handleOnSubmit}>
                 Submit
-              </Button> 
+              </button> 
             </Form> 
           </Container>
-        </Row>
-        <Row className='my-5'>
-          <Col>You can alternatively make use of our Contact Infos</Col>
-        </Row>
-        <Row className='my-5'>
-          <Col>
-            <p>Phone Numbers</p>
+          </Col>
+          <Col md={4}>
+          <div className='px-5'>
+            <p style={{fontSize:"24px"}}>CONTACT INFORMATION</p>
             <div className='my-3 contact-item'>
               <i class="bi bi-telephone-outbound-fill" style={{fontSize: "1.3rem"}}></i>
               <a href='tel:+233(0)322499410' className='contact-link'>+233(0)322499410</a>
@@ -101,10 +103,7 @@ const ContactUs = () => {
               <i class="bi bi-telephone-outbound-fill" style={{fontSize: "1.3rem"}}></i>
               <a href='tel:+233(0)595381829' className='contact-link'>+233(0)595381829</a>
             </div>
-          </Col>
-          <Col>
-           <p>Emails</p>
-           <div className='my-3 contact-item'>
+            <div className='my-3 contact-item'>
             <i className="bi bi-envelope-at-fill" style={{fontSize: "1.5rem"}}></i>
             <a href='mailto:sales@mizpahgh.com' className='contact-link'>sales@mizpahgh.com</a>
            </div>
@@ -112,6 +111,7 @@ const ContactUs = () => {
              <i className="bi bi-envelope-at-fill" style={{fontSize: "1.5rem"}}></i>
              <a href='mailto:info@mizpahgh.com' className='contact-link'>info@mizpahgh.com</a>
             </div>
+          </div>
           </Col>
         </Row>
       </Container>

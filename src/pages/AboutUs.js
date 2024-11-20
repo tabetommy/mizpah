@@ -61,9 +61,9 @@ function AboutUs() {
           <div id="safety" >
             <h3 className="text-start left-bor">Safety Policies & Objectives</h3>
             <p style={{ margin: 0 }} className="quote">
-              <i className="fa fa-quote-left me-2" aria-hidden="true" style={{ color: 'rgb(38, 216, 202)' }}></i>
+              <i className="fa fa-quote-left me-2" aria-hidden="true" style={{ color: '#00fa9a' }}></i>
               <i>Safety is not a gadget but a state of mind.</i>
-              <i className="fa fa-quote-right ms-2" aria-hidden="true" style={{ color: 'rgb(38, 216, 202)' }}></i>
+              <i className="fa fa-quote-right ms-2" aria-hidden="true" style={{ color: '#00fa9a' }}></i>
             </p>
             <p className="mt-0">
               The general Company safety philosophy has been developed to reflect

@@ -3,25 +3,6 @@ import Footer from "../components/Footer";
 import Header from "../routeComponents/Header";
 import ScrollComponent from "./scrollcomponent/scroll";
 import ParticlesBackground from "../components/Particles/Particles.js";
-// import UnderConstruction from "../components/UnderConstruction";
-// import ImageOne from "../assets/dark-main.png";
-// import ImageTwo from "../assets/dark-newmain.png";
-// import BartailImage from "../assets/bartail.png";
-// import Welding from "../assets/welding.jpeg";
-// import ConstructionImage from "../assets/Construction.jpg";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick";
-
-// import AboutUsSection from "../components/AboutUsSection";
-// import WhatWeDoSection from "../components/WhatWeDoSection";
-// import ProductsHeadline from "../components/ProductsHeadline";
-// import TransportationImage from "../assets/productimages/transportation.png";
-// import CorrosionProtectionImage from "../assets/corrosion-protection.jpg";
-// import TanksAndPipingImage from "../assets/productimages/tanks-and-piping.png";
-// import Pipe from "../assets/pipes-svgrepo-com.svg"; 
-// import Tank from "../assets/tanks.svg"; 
-
 import Pump from "../assets/tools-svgrepo-com.svg"; 
 import Construction from "../assets/construction.svg";
 import Thruflo from "../assets/productimages/truflo_506.png";
@@ -74,7 +55,7 @@ function Home() {
                  <p>
                     We specialize in providing expert solutions for all your pumping needs, from installation to maintenance and repair.
                     <br/>
-                    <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/pumping')}>
+                    <span className="find-out-more-btn" onClick={()=>navigate('/services/pumping')}>
                     Find out more 
                     <i className="bi bi-arrow-right px-1"></i> 
                     </span>
@@ -86,7 +67,7 @@ function Home() {
                    <p>
                       Our expert team provides top-notch sand blasting and painting services to rejuvenate and protect your surfaces.
                       <br/>
-                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/sandblasting')}>
+                      <span className="find-out-more-btn"  onClick={()=>navigate('/services/sandblasting')}>
                       Find out more 
                       <i className="bi bi-arrow-right px-1"></i> 
                       </span>
@@ -98,7 +79,7 @@ function Home() {
                    <p>
                       Your trusted partner in comprehensive construction services.
                       <br/>
-                      <span style={{cursor:"pointer", color:'rgb(38 216 202)'}} onClick={()=>navigate('/services/construction')}>
+                      <span className="find-out-more-btn" onClick={()=>navigate('/services/construction')}>
                       Find out more 
                       <i className="bi bi-arrow-right px-1"></i> 
                       </span>

@@ -1,8 +1,10 @@
 import React from "react";
 import FooterHeader from "./FooterHeader";
 import FooterNavItem from "./FooterNavItem";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <div style={{ background: "hsl(218, 28%, 13%)" }} className="p-5">
       <div className="container">
@@ -13,12 +15,12 @@ const Footer = () => {
             republic of Ghana, to provide technical support in the field of
             Engineering.
             <div>
-              <a
-                href="/where-we-operate"
+              <button
+                onClick={()=>navigate("/contact-us")}
                 className="btn btn-outline-light mt-4"
               >
                 Where we operate
-              </a>
+              </button>
             </div>
           </div>
           <div className="col-md-2 mt-2">
