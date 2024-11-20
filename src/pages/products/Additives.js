@@ -78,18 +78,16 @@ const MudexAdditivesComponent=()=>{
 					<div className="img-background">
 						<img src={MudexLogo} style={{ width: 200 }} />
 					</div>
-					<section className="container text-white blast-paint-cont">
-						<h3 className="text-start my-3" >Mudex Additives</h3>
-						<p className="mb-5 py-5  page-para home-text">
-							At MIZPAH, we specialize in providing high-quality Mudex additives designed to enhance the performance and efficiency of drilling fluids. Our products ensure optimal drilling operations, reducing costs and increasing productivity through superior fluid stabilization, viscosity control, and filtration management.  
+					<h3 className="text-start my-3" >Mudex Additives</h3>
+					<p className="mb-5">
+						At MIZPAH, we specialize in providing high-quality Mudex additives designed to enhance the performance and efficiency of drilling fluids. Our products ensure optimal drilling operations, reducing costs and increasing productivity through superior fluid stabilization, viscosity control, and filtration management.
 						<br/>
-					   	Our range includes viscosifiers, filtration control agents, lubricants, and lost circulation materials, all engineered to improve performance and reduce downtime.  <br/><br/>
-					   	<span 
-					   	className='page-contact-btn'
-					   	onClick={()=>navigate('/contact-us')}
-							>Contact us to find out more</span>
-						</p>
-					</section>
+						Our range includes viscosifiers, filtration control agents, lubricants, and lost circulation materials, all engineered to improve performance and reduce downtime.  <br/><br/>
+						<span 
+						className='page-contact-btn'
+						onClick={()=>navigate('/contact-us')}
+						 >Contact us to find out more</span>
+					</p>
 				</Col>
 				<Col>
 					<ImageGallery 

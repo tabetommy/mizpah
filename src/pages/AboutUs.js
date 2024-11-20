@@ -4,6 +4,9 @@ import Footer from "../components/Footer";
 import Header from "../routeComponents/Header";
 import ScrollComponent from "./scrollcomponent/scroll";
 import ParticlesBackground from "../components/Particles/Particles.js";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 function AboutUs() {
@@ -22,9 +25,9 @@ function AboutUs() {
        </div>
        <ScrollComponent scrollreference={scrollRef}/>
      </div>
-     <div className="container py-5" ref={scrollRef}>
-      <div className="row g-5">
-        <div className="col p-4">
+     <Container className="py-5" ref={scrollRef}>
+      <Row className="g-5">
+        <Col md={6} className="p-4">
           <div id="vision" className="mb-5">
             <h3 className="text-start left-bor" >Vision Statement</h3>
             <p className="mt-0">
@@ -52,14 +55,14 @@ function AboutUs() {
             We strive to build lasting relationships with our suppliers and customers by exceeding their expectations and gaining their trust through exceptional delivery and performance by every member of our team.
             </p>
           </div>
-        </div>
+        </Col>
        
-        <div class="col p-4" style={{borderLeft: '3px solid rgb(38 216 202)' }}>
+        <Col md={6} className="p-4 left-green-bod-line">
           <div id="safety" >
             <h3 className="text-start left-bor">Safety Policies & Objectives</h3>
             <p style={{ margin: 0 }} className="quote">
               <i className="fa fa-quote-left me-2" aria-hidden="true" style={{ color: 'rgb(38, 216, 202)' }}></i>
-              Safety is not a gadget but a state of mind.
+              <i>Safety is not a gadget but a state of mind.</i>
               <i className="fa fa-quote-right ms-2" aria-hidden="true" style={{ color: 'rgb(38, 216, 202)' }}></i>
             </p>
             <p className="mt-0">
@@ -96,9 +99,9 @@ function AboutUs() {
               </ul>
             </p>
           </div>
-        </div>
-      </div>  
-      </div>
+        </Col>
+      </Row>  
+      </Container>
       <Footer/>
     </div>
   );
