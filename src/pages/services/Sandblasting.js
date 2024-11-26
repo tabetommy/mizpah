@@ -32,7 +32,7 @@ const SandblastingServices=()=>{
 				 	<p className='my-5'>
 					 	Our painting services offer durable and aesthetically pleasing finishes, tailored to meet your specific needs. Whether it’s for industrial, commercial, or residential projects, we deliver exceptional results that enhance the longevity and appearance of your assets.<br /><br />
 						 <span 
-						 className='page-contact-btn'
+						 className='transparent-btn'
 						 onClick={()=>navigate('/contact-us')}
 						  >Contact us to find out more</span>
 				 	</p>

@@ -50,6 +50,10 @@ export const menuItemsData = [
 		title: "Lifting Gears/Equipment",
 		url: "/products/gears",
 	  },
+	  {
+		  title: "Crusher",
+		  url: "/products/crusher",
+	  },
 	],
   },
   {

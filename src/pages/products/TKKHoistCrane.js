@@ -58,7 +58,7 @@ const TKKGearsComponent=()=>{
 					<p className="mb-5">
 						We specialize in supplying high-quality TKK lifting gears, renowned for their reliability, safety, durability and efficiency. Our extensive range includes electric chain hoists, wire rope hoists, manual chain hoists, and more, designed to meet the rigorous demands of various industries.  <br/><br/>
 						<span 
-						className='page-contact-btn'
+						className='transparent-btn'
 						onClick={()=>navigate('/contact-us')}
 						 >Contact us to find out more</span>
 					</p>

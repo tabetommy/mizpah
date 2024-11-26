@@ -72,7 +72,7 @@ const PumpingService=()=>{
 						<p className='my-5'>
 							We handle everything from routine inspections to emergency repairs, using top-quality parts and advanced techniques. Trust us to keep your systems flowing smoothly with prompt, professional service every time. Contact us today for fast and affordable pumping services!<br /><br />
 							<span 
-							className='page-contact-btn'
+							className='transparent-btn'
 							onClick={()=>navigate('/contact-us')}
 							 >Contact us to find out more</span>
 						</p>

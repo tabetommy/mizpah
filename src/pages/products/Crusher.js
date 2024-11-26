@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
-import MudexLogo from "../../assets/Mudex.png";
+import Hailstone from "../../assets/HailstoneLogo.png";
 
 import ImageGallery from "react-image-gallery";
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -24,7 +24,7 @@ import ImageTen from "../../assets/image 10.png";
 
 
 
-const MudexAdditivesComponent=()=>{
+const CrusherComponent=()=>{
 
 	const navigate = useNavigate();
 	const imagesArrss=[
@@ -76,15 +76,15 @@ const MudexAdditivesComponent=()=>{
 			  <Row className='my-5 flex-column'>
 				<Col>
 					<div className="img-background">
-						<img src={MudexLogo} style={{ width: 200 }} />
+						<img src={Hailstone} style={{ width: 200 }} />
 					</div>
-					<h3 className="text-start my-3" >Mudex Additives</h3>
+					<h3 className="text-start my-3" >Crusher</h3>
 					<p className="mb-5">
 						At MIZPAH, we specialize in providing high-quality Mudex additives designed to enhance the performance and efficiency of drilling fluids. Our products ensure optimal drilling operations, reducing costs and increasing productivity through superior fluid stabilization, viscosity control, and filtration management.
 						<br/>
 						Our range includes viscosifiers, filtration control agents, lubricants, and lost circulation materials, all engineered to improve performance and reduce downtime.  <br/><br/>
 						<span 
-						className='transparent-btn'
+						className='page-contact-btn'
 						onClick={()=>navigate('/contact-us')}
 						 >Contact us to find out more</span>
 					</p>
@@ -104,4 +104,4 @@ const MudexAdditivesComponent=()=>{
 		</div>
 	)
 }
-export default  MudexAdditivesComponent;
+export default  CrusherComponent;

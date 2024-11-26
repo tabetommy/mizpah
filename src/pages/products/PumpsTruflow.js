@@ -129,7 +129,7 @@ const TruflowPumpsComponent=()=>{
 					<p className="mb-5">
 						We provide truflo pumping systems tailored to meet the most demanding industrial needs. They make use of cutting-edge technology that  ensures efficient and reliable fluid handling across various applications, from mining to water treatment. <br/><br/>
 						<span 
-						className='page-contact-btn'
+						className='transparent-btn'
 						onClick={()=>navigate('/contact-us')}
 						 >Contact us to find out more</span>
 					</p>

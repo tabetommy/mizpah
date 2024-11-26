@@ -76,7 +76,7 @@ const ConstructionServices=()=>{
 						<p className='my-5'>
 							At Mizpah, we are committed to delivering high-quality construction services that integrate seamlessly with your project’s needs. With our experienced team and dedication to excellence, you can trust us to bring your vision to life. Contact us today to learn more about how we can support your next construction project.<br /><br />
 							<span 
-							className='page-contact-btn'
+							className='transparent-btn'
 							onClick={()=>navigate('/contact-us')}
 							 >Contact us to find out more</span>
 						</p>

@@ -1,23 +1,19 @@
 
-import { useState, useRef } from 'react';
 import Footer from "../components/Footer";
 import Header from "../routeComponents/Header";
 import ParticlesBackground from "../components/Particles/Particles.js";
-import Button from 'react-bootstrap/Button';
+
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import ScrollComponent from "./scrollcomponent/scroll";
 
-import emailjs from 'emailjs-com';
 import WhereWeOperate from './WhereWeOperate';
 
 
 
 
 const ContactUs = () => {
-  const [validated, setValidated] = useState(false);
   
   
   const handleOnSubmit = (e) => {
@@ -26,7 +22,6 @@ const ContactUs = () => {
   };
 
 
-  const scrollRef= useRef(null);
   return (
     <div>
       <Header />
