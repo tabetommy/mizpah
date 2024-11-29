@@ -1,5 +1,5 @@
 import React from "react";
-import UnderConstructionGraphic from "../assets/under-construction.svg";
+// import UnderConstructionGraphic from "../assets/under-construction.svg";
 import PlaceholderImage from "../assets/placeholder.jpg";
 
 function UnderConstruction({ spaceAtTop }) {

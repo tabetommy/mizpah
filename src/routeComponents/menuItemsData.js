@@ -51,7 +51,7 @@ export const menuItemsData = [
 		url: "/products/gears",
 	  },
 	  {
-		  title: "Crusher",
+		  title: "Crushing & Screening",
 		  url: "/products/crusher",
 	  },
 	],

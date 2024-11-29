@@ -5,21 +5,25 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useNavigate } from "react-router-dom";
-import Hailstone from "../../assets/HailstoneLogo.png";
+
 
 import ImageGallery from "react-image-gallery";
 import 'react-image-gallery/styles/css/image-gallery.css';
 
-import ImageOne from "../../assets/image 1.png";
-import ImageTwo from "../../assets/image 2.png";
-import ImageThree from "../../assets/image 3.png";
-import ImageFour from "../../assets/image 4.png";
-import ImageFive from "../../assets/image 5.png";
-import ImageSix from "../../assets/image 6.png";
-import ImageSeven from "../../assets/image 7.png";
-import ImageEight from "../../assets/image 8.png";
-import ImageNine from "../../assets/image 9.png";
-import ImageTen from "../../assets/image 10.png";
+import HS_one from "../../assets/productimages/hs_jaw_crusher.png";
+import HS_two from "../../assets/productimages/hs_cone_crusher_HF.png";
+import HS_three from "../../assets/productimages/hs_cone_crusher_EC.png";
+import HS_four from "../../assets/productimages/hs_vsi_crusher.png";
+import HS_five from "../../assets/productimages/hs_vibrating_screen.png";
+import HS_six from "../../assets/productimages/hs_bw_classifier.png";
+import HS_seven from "../../assets/productimages/hs_add_washer.png";
+import HS_eight from "../../assets/productimages/hs_pan-feeder.png";
+import HS_nine from "../../assets/productimages/hs_grizzly_feeder.png";
+import HS_ten from "../../assets/productimages/hs_h_s-impactor.png";
+// import HS_eleven from "../../assets/productimages/hs_clarifier.png";
+
+
+
 
 
 
@@ -29,39 +33,41 @@ const CrusherComponent=()=>{
 	const navigate = useNavigate();
 	const imagesArrss=[
 		{
-			original: ImageOne,
+			original: HS_one,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ImageTwo,
+			original: HS_two,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ImageThree,
+			original: HS_three,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		},
 		{
-			original: ImageFour,
+			original: HS_four,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		},	
 		{
-			original: ImageFive,
+			original: HS_ten,
+			thumbnail: 'https://picsum.photos/id/1019/250/150/',
+		}, 
+		{
+			original: HS_five,
+			thumbnail: 'https://picsum.photos/id/1019/250/150/',
+		}, 
+		{
+			original: HS_six,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ImageSix,
-			thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		}, {
-			original: ImageSeven,
+			original: HS_seven,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		},
 		{
-			original: ImageEight,
+			original: HS_eight,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
 		}, {
-			original: ImageNine,
+			original: HS_nine,
 			thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		}, {
-			original: ImageTen,
-			thumbnail: 'https://picsum.photos/id/1019/250/150/',
-		},
+		}
 	];
 	
 	const renderThumbInner = () => {
@@ -76,15 +82,15 @@ const CrusherComponent=()=>{
 			  <Row className='my-5 flex-column'>
 				<Col>
 					<div className="img-background">
-						<img src={Hailstone} style={{ width: 200 }} />
+						<img src="https://hailstonein.com/Backend/Upload/Image/Default/logo.png" style={{ width: 200 }} />
 					</div>
-					<h3 className="text-start my-3" >Crusher</h3>
+					<h3 className="text-start my-3" > Crushing & Screening Equipments </h3>
 					<p className="mb-5">
-						At MIZPAH, we specialize in providing high-quality Mudex additives designed to enhance the performance and efficiency of drilling fluids. Our products ensure optimal drilling operations, reducing costs and increasing productivity through superior fluid stabilization, viscosity control, and filtration management.
+						MIZPAH specilises in providing safe, secure, low operating cost and highly efficient Hailstone crushing and screening equipments. 
 						<br/>
-						Our range includes viscosifiers, filtration control agents, lubricants, and lost circulation materials, all engineered to improve performance and reduce downtime.  <br/><br/>
+						Our range includes Jaw and cone crushers, vertical and Horizontal Shaft Impactors, Vibrating Screens, Buscket Wheel Classifiers, add Wash and Clarifiers all engineered to improve performance. <br/><br/>
 						<span 
-						className='page-contact-btn'
+						className='transparent-btn'
 						onClick={()=>navigate('/contact-us')}
 						 >Contact us to find out more</span>
 					</p>

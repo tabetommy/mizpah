@@ -5,6 +5,7 @@ import ScrollComponent from "./scrollcomponent/scroll";
 import ParticlesBackground from "../components/Particles/Particles.js";
 import Pump from "../assets/tools-svgrepo-com.svg"; 
 import Construction from "../assets/construction.svg";
+import HS_ten from "../assets/productimages/hs_h_s-impactor.png";
 import Thruflo from "../assets/productimages/truflo_506.png";
 import Mudex from "../assets/image 1.png";
 import Tkk from "../assets/image_23_506.png";
@@ -33,7 +34,7 @@ function Home() {
       <div className="home-main-container">
         <section className="container text-white blast-paint-cont">
           <h1>Discover the MIZPAH Experience</h1>
-          <p className="mb-5 py-5 text-center page-para home-text">
+          <p className="mb-5 py-5 text-center page-para resp-home-text">
            where cutting-edge technology and <br/>exceptional service  converge to create unparalleled value for our clients.<br/><span className="home-title-CTA">Join us in building a sustainable future, one project at a time.</span>
           </p>
         </section>
@@ -90,9 +91,9 @@ function Home() {
          
       </div>
       <div className="home-contentsssss ">
-          <section className="container text-white heading-para blast-paint-cont">
+          <section className="container text-white blast-paint-cont">
             <h1>Who we are</h1>
-            <p className="mb-5 py-5 text-center page-para home-text ">
+            <p className="mb-5 py-5 text-center page-para resp-home-text">
               Welcome to MIZPAH, where innovation meets reliability <br/>With decades of experience, we proudly supply top-tier goods and services across diverse fields such as construction, water pumping, drilling, and beyond. Our expertise drives your projects forward, from groundbreaking infrastructure to seamless water solutions.
               
               <p className="text-center mt-4">
@@ -112,7 +113,7 @@ function Home() {
           </section>
          <section className="container home-prod-con">
            <div className="row my-5">
-            <div className="col-xxl-4 col-lg-12 my-4">
+            <div className="col-xxl-3 col-lg-6 col-md-12 my-4">
               <Card className="d-flex flex-column">
                 <Card.Img variant="top" src={Thruflo} />
                 <Card.Body className="d-flex flex-column">
@@ -126,7 +127,7 @@ function Home() {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-xxl-4 col-lg-12 my-4">
+            <div className="col-xxl-3 col-lg-6 col-md-12 my-4">
               <Card className="d-flex flex-column">
                 <Card.Img variant="top" src={Mudex}/>
                 <Card.Body className="d-flex flex-column">
@@ -140,13 +141,28 @@ function Home() {
                 </Card.Body>
               </Card>
             </div>
-            <div className="col-xxl-4 col-lg-12 my-4">
+            <div className="col-xxl-3 col-lg-6 col-md-12 my-4">
               <Card className="d-flex flex-column">
                 <Card.Img variant="top" src={Tkk}/>
                 <Card.Body className="d-flex flex-column">
                   <Card.Title>Lifting Gears/Equipments</Card.Title>
                   <Card.Text className="mb-3">
                     We supply  high-quality TKK lifting gears/equipments. <span className="text-white">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx</span>
+                    
+                  </Card.Text> 
+                 <div className="mt-auto" onClick={()=>navigate('/products/gears')}>
+                   <span className="home-prod-btn">Find out more</span>
+                 </div>
+                </Card.Body>
+              </Card>
+            </div>
+            <div className="col-xxl-3 col-lg-6 col-md-12 my-4">
+              <Card className="d-flex flex-column">
+                <Card.Img variant="top" src={HS_ten}/>
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title>Crushing & Screening </Card.Title>
+                  <Card.Text className="mb-3">
+                    We supply  secure and low operating costs crushers and screeners. <span className="text-white">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxx</span>
                     
                   </Card.Text> 
                  <div className="mt-auto" onClick={()=>navigate('/products/gears')}>
