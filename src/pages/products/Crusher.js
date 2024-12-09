@@ -82,11 +82,11 @@ const CrusherComponent=()=>{
 			  <Row className='my-5 flex-column'>
 				<Col>
 					<div className="img-background">
-						<img src="https://hailstonein.com/Backend/Upload/Image/Default/logo.png" style={{ width: 200 }} />
+						<img src="https://hailstonein.com/Backend/Upload/Image/Default/logo.png" style={{ width: 200,height:80 }} />
 					</div>
 					<h3 className="text-start my-3" > Crushing & Screening Equipments </h3>
 					<p className="mb-5">
-						MIZPAH specilises in providing safe, secure, low operating cost and highly efficient Hailstone crushing and screening equipments. 
+						MIZPAH specialises in providing safe, secure, low operating cost and highly efficient Hailstone crushing and screening equipments. 
 						<br/>
 						Our range includes Jaw and cone crushers, vertical and Horizontal Shaft Impactors, Vibrating Screens, Buscket Wheel Classifiers, add Wash and Clarifiers all engineered to improve performance. <br/><br/>
 						<span 
